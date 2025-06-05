@@ -31,8 +31,68 @@ loadGeoJSON('export.geojson', cafeCircleStyle);
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
   if (feature.properties && feature.properties.name) {
-    layer.bindPopup(`<b>${feature.properties.name}</b>`);
+    // Create a custom popup with formatted content
+    const popupContent = createPopupContent(feature.properties);
+    
+    // Bind the popup to the layer
+    const popup = L.popup({
+      className: 'custom-popup',
+      maxWidth: 300,
+      closeButton: true
+    }).setContent(popupContent);
+    
+    layer.bindPopup(popup);
+    
+    // Add hover behavior
+    layer.on({
+      mouseover: function(e) {
+        this.openPopup();
+      }
+    });
   }
+}
+
+// Function to create formatted popup content
+function createPopupContent(properties) {
+  // Create container for popup content
+  let content = '<div class="popup-container">';
+  
+  // Restaurant name
+  content += `<div class="popup-name">${properties.name || 'Restaurant'}</div>`;
+  
+  // Opening hours if available
+  if (properties.opening_hours) {
+    content += `<div class="popup-hours">
+                  <span class="popup-label">Hours:</span> 
+                  <span class="popup-value">${properties.opening_hours}</span>
+                </div>`;
+  }
+  
+  // Cuisine if available
+  if (properties.cuisine) {
+    content += `<div class="popup-cuisine">
+                  <span class="popup-label">Cuisine:</span> 
+                  <span class="popup-value">${properties.cuisine}</span>
+                </div>`;
+  }
+  
+  // Phone if available
+  if (properties.phone) {
+    content += `<div class="popup-phone">
+                  <span class="popup-label">Phone:</span> 
+                  <span class="popup-value">${properties.phone}</span>
+                </div>`;
+  }
+  
+  // Website button if available
+  if (properties.website) {
+    content += `<div class="popup-website">
+                  <a href="${properties.website}" target="_blank" class="website-btn">Visit Website</a>
+                </div>`;
+  }
+  
+  content += '</div>';
+  return content;
 }
 
 // Function to calculate circle radius based on zoom level

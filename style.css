@@ -49,3 +49,91 @@ body {
     padding: 2px 5px;
     border-radius: 4px;
 }
+
+/* Custom popup styles */
+.custom-popup .leaflet-popup-content-wrapper {
+    background-color: rgba(40, 40, 40, 0.95);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
+
+.custom-popup .leaflet-popup-content {
+    margin: 0;
+    padding: 0;
+    width: 280px !important;
+    font-family: 'Palatino Linotype', serif;
+}
+
+.custom-popup .leaflet-popup-tip {
+    background-color: rgba(40, 40, 40, 0.95);
+}
+
+.custom-popup .leaflet-popup-close-button {
+    color: #ffeb3b;
+    font-size: 16px;
+    padding: 8px 8px 0 0;
+}
+
+.custom-popup .leaflet-popup-close-button:hover {
+    color: #ffffff;
+}
+
+/* Popup container */
+.popup-container {
+    padding: 15px;
+}
+
+/* Restaurant name styling */
+.popup-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffeb3b;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 8px;
+}
+
+/* Field labels and values */
+.popup-label {
+    color: #aaaaaa;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    width: 65px;
+}
+
+.popup-value {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* Info rows styling */
+.popup-hours, .popup-cuisine, .popup-phone {
+    margin-bottom: 8px;
+}
+
+/* Website button styling */
+.popup-website {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.website-btn {
+    display: inline-block;
+    background-color: #ffeb3b;
+    color: #333333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.website-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

@@ -46,13 +46,13 @@ loadGeoJSON('export.geojson', cafeCircleStyle);
 
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
-  if (feature.properties && feature.properties.name) {
-    // Create simple hover label that only shows the name
+  if (feature.properties && feature.properties.name) {    // Create simple hover label that only shows the name
     const hoverLabel = L.tooltip({
       permanent: false,
       direction: 'top',
-      className: 'hover-tooltip'
-    }).setContent(`<div>${feature.properties.name || 'Restaurant'}</div>`);
+      className: 'hover-tooltip',
+      offset: [0, -12] // Offset upward to avoid overlapping with the marker
+    }).setContent(`<div style="text-align: center; font-weight: 500;">${feature.properties.name || 'Restaurant'}</div>`);
     
     // Bind the tooltip for hover effect
     layer.bindTooltip(hoverLabel);
@@ -69,8 +69,7 @@ function onEachFeature(feature, layer) {
       autoPan: true,    // Ensure popup is in view
       autoClose: false  // Keep popup open until explicitly closed
     }).setContent(popupContent);
-    
-    // Custom binding to control popup behavior
+      // Custom binding to control popup behavior
     layer.bindPopup(popup);
     
     // Add hover and click behaviors with tooltip management
@@ -95,7 +94,10 @@ function onEachFeature(feature, layer) {
         this.once('popupclose', function() {
           // Restore mouseover handler after popup closes
           this.on('mouseover', function() {
-            this.openTooltip();
+            // Only show tooltip if popup is not open
+            if (!this._popup || !this._popup._isOpen) {
+              this.openTooltip();
+            }
           });
         });
       },

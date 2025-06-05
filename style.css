@@ -213,18 +213,20 @@ body {
 
 /* Hover tooltip styles */
 .hover-tooltip {
-  background-color: var(--color-overlay);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-  padding: 4px 8px;
+  background-color: rgba(40, 40, 40, 1); /* Fully opaque */
+  border: none; /* Remove outline */
+  border-radius: 6px;
+  padding: 8px 12px; /* Larger padding */
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
+  font-size: 16px; /* Larger font */
   color: var(--color-text);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+  margin-top: -12px; /* Offset upward */
 }
 
 .hover-tooltip:before {
-  border-top-color: var(--color-overlay);
+  border-top-color: rgba(40, 40, 40, 1); /* Match background color */
+  margin-bottom: 5px; /* Adjust arrow position */
 }
 
 /* Legend styling */

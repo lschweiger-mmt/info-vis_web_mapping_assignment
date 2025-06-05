@@ -14,6 +14,19 @@ body{
     color: var(--color-text);
 }
 
+/* Map title styling */
+.map-title {
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    z-index: 1000;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    pointer-events: none; /* Allow clicking through the title */
+}
+
 #map {
     height: 100vh;
     width: 100vw;
@@ -198,6 +211,7 @@ body {
     display: inline-block;
     background-color: var(--color-accent);
     color: var(--color-main);
+    color: var(--color-main) ! important;
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -226,9 +240,25 @@ body {
 
 .hover-tooltip:before {
   border-top-color: rgba(40, 40, 40, 1); /* Match background color */
-  margin-bottom: 5px; /* Adjust arrow position */
+}
+/* Fix arrow positioning */
+.hover-tooltip .leaflet-tooltip-tip {
+  display: none; /* Hide default arrow */
 }
 
+/* Create custom arrow that doesn't overlap with content */
+.hover-tooltip:after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #282828;
+}
 /* Legend styling */
 .legend {
   font-family: 'Noto Sans KR', sans-serif !important;

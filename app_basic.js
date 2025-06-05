@@ -23,6 +23,11 @@ L.control.zoom({
   position: 'topleft'
 }).addTo(map);
 
+// Add a title to the map
+const mapTitle = L.DomUtil.create('div', 'map-title');
+mapTitle.innerHTML = 'Vegan friendly restaurants in Austria';
+document.body.appendChild(mapTitle);
+
 const cafeCircleStyle = {
   radius: 8,
   fillColor: COLORS.TEXT,
@@ -46,13 +51,30 @@ loadGeoJSON('export.geojson', cafeCircleStyle);
 
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
-  if (feature.properties && feature.properties.name) {    // Create simple hover label that only shows the name
+  if (feature.properties && feature.properties.name) {
+    // Create tooltip with name and address if available
+    let tooltipContent = `<div style="text-align: center; font-weight: 500;">${feature.properties.name || 'Restaurant'}`;
+    
+    // Add address if available
+    if (feature.properties.addr_street || feature.properties.addr_housenumber) {
+      const address = [
+        feature.properties.addr_housenumber,
+        feature.properties.addr_street
+      ].filter(Boolean).join(' ');
+      
+      if (address.trim() !== '') {
+        tooltipContent += `<div style="font-size: 12px; font-weight: 400; opacity: 0.8;">${address}</div>`;
+      }
+    }
+    
+    tooltipContent += `</div>`;
+    
     const hoverLabel = L.tooltip({
       permanent: false,
       direction: 'top',
       className: 'hover-tooltip',
       offset: [0, -12] // Offset upward to avoid overlapping with the marker
-    }).setContent(`<div style="text-align: center; font-weight: 500;">${feature.properties.name || 'Restaurant'}</div>`);
+    }).setContent(tooltipContent);
     
     // Bind the tooltip for hover effect
     layer.bindTooltip(hoverLabel);

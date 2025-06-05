@@ -1,13 +1,11 @@
 // Initialize the map
 var map = L.map('map').setView([47.7998, 13.0453], 14); // Centered on Salzburg Altstadt
 
-// Define the tile layer
-var baseMap1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
+var baseMap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
 });
 
-// Add default basemap
-baseMap1.addTo(map);
+baseMap5.addTo(map); // Dark Theme
 
 // Define custom icons for regular cafes and favorite cafes
 const cafeIcon = L.icon({
@@ -23,6 +21,7 @@ const favCafeIcon = L.icon({
   iconAnchor: [16, 32],
   popupAnchor: [0, -32]
 });
+
 
 // Load the all-fav.geojson and favcafes.geojson files
 loadGeoJSON('all-fav.geojson', cafeIcon);
@@ -72,6 +71,7 @@ L.control.scale({
 function addLegend(map) {
   const legend = L.control({ position: 'bottomright' });
 
+  // LEGEND STYLE 1: Default style
   legend.onAdd = function () {
     const div = L.DomUtil.create('div', 'legend');
     div.style.background = 'white';
@@ -94,7 +94,6 @@ function addLegend(map) {
     `;
     return div;
   };
-
   legend.addTo(map);
 }
 

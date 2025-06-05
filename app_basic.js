@@ -44,25 +44,53 @@ function onEachFeature(feature, layer) {
     // Create a custom popup with detailed content for click
     const popupContent = createPopupContent(feature.properties);
     
-    // Bind the popup to the layer
+    // Bind the popup to the layer with options to center it on the marker
     const popup = L.popup({
       className: 'custom-popup',
       maxWidth: 300,
-      closeButton: true
+      closeButton: true,
+      offset: [0, -10], // Slight offset to ensure it doesn't cover the marker
+      autoPan: true,    // Ensure popup is in view
+      autoClose: false  // Keep popup open until explicitly closed
     }).setContent(popupContent);
     
+    // Custom binding to control popup behavior
     layer.bindPopup(popup);
     
-    // Add hover and click behaviors
+    // Add hover and click behaviors with tooltip management
     layer.on({
       mouseover: function(e) {
-        this.openTooltip();
+        // Only show tooltip if popup is not open
+        if (!this._popup || !this._popup._isOpen) {
+          this.openTooltip();
+        }
       },
       mouseout: function(e) {
         this.closeTooltip();
+      },
+      popupopen: function(e) {
+        // Close tooltip when popup opens
+        this.closeTooltip();
+        
+        // Prevent tooltip from showing while popup is open
+        this.off('mouseover');
+        
+        // Handle popup close event to restore tooltip behavior
+        this.once('popupclose', function() {
+          // Restore mouseover handler after popup closes
+          this.on('mouseover', function() {
+            this.openTooltip();
+          });
+        });
+      },
+      click: function(e) {
+        // Open popup centered on marker rather than at click point
+        const latlng = this.getLatLng();
+        this.openPopup(latlng);
+        
+        // Prevent event propagation to avoid map click handlers
+        L.DomEvent.stopPropagation(e);
       }
-      // Let the default click behavior handle opening the popup
-      // The popup will stay open until closed
     });
   }
 }

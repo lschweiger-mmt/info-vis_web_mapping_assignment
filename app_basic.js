@@ -127,6 +127,50 @@ function getRadiusForZoom(baseRadius) {
   }
 }
 
+// Function to calculate the centroid of a polygon or multipolygon
+function calculateCentroid(geometry) {
+  try {
+    // For Point geometries, just return the coordinates
+    if (geometry.type === 'Point') {
+      return [geometry.coordinates[1], geometry.coordinates[0]]; // [lat, lng] for Leaflet
+    }
+    
+    // For Polygon geometries
+    if (geometry.type === 'Polygon') {
+      const coordinates = geometry.coordinates[0]; // Outer ring
+      let lat = 0, lng = 0;
+      
+      // Calculate average of all points
+      for (const coord of coordinates) {
+        lng += coord[0];
+        lat += coord[1];
+      }
+      
+      return [lat / coordinates.length, lng / coordinates.length];
+    }
+    
+    // For MultiPolygon geometries
+    if (geometry.type === 'MultiPolygon') {
+      // Use the first polygon for simplicity
+      const coordinates = geometry.coordinates[0][0]; // First polygon, outer ring
+      let lat = 0, lng = 0;
+      
+      for (const coord of coordinates) {
+        lng += coord[0];
+        lat += coord[1];
+      }
+      
+      return [lat / coordinates.length, lng / coordinates.length];
+    }
+    
+    console.warn('Unsupported geometry type:', geometry.type);
+    return null;
+  } catch (error) {
+    console.error('Error calculating centroid:', error);
+    return null;
+  }
+}
+
 // Function to load and display GeoJSON data using circle markers
 function loadGeoJSON(url, circleStyle) {
   var xhr = new XMLHttpRequest();
@@ -137,8 +181,40 @@ function loadGeoJSON(url, circleStyle) {
     if (xhr.status >= 200 && xhr.status < 300) {
       var data = xhr.response;
       
+      // Create a normalized version of the GeoJSON where all features are points
+      const normalizedData = {
+        type: 'FeatureCollection',
+        features: []
+      };
+      
+      // Convert all geometries to points (using centroids for polygons)
+      data.features.forEach(feature => {
+        // Skip features without geometry
+        if (!feature.geometry) return;
+        
+        // For non-point geometries, calculate the centroid
+        if (feature.geometry.type !== 'Point') {
+          const centroid = calculateCentroid(feature.geometry);
+          
+          if (centroid) {
+            // Create a new point feature at the centroid location
+            normalizedData.features.push({
+              type: 'Feature',
+              properties: feature.properties,
+              geometry: {
+                type: 'Point',
+                coordinates: [centroid[1], centroid[0]] // [lng, lat] for GeoJSON
+              }
+            });
+          }
+        } else {
+          // If it's already a point, just add it directly
+          normalizedData.features.push(feature);
+        }
+      });
+      
       // Create a GeoJSON layer with circle markers
-      var geoJsonLayer = L.geoJSON(data, {
+      var geoJsonLayer = L.geoJSON(normalizedData, {
         pointToLayer: function (feature, latlng) {
           // Create a copy of the style to avoid modifying the original
           const style = Object.assign({}, circleStyle);

@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">   <!-- specifies the character encoding for the page, ensuring that it can handle any text content properly. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- is important for mobile responsiveness. -->
-	                                                                     <!-- it ensures that the page will scale correctly depending on the device width and zoom. -->
-  <title>Leaflet Map</title> <!-- This sets the title of the web page that appears on the browser tab -->
-  
-   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> <!-- essential for the map rendering. --> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegan Restaurants Tyrol Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
 
-  <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> <!-- imports leaflet's javascript which provides the functions for the interactive map-->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 	
   <style>
     #map {
-      height: 100vh; <!-- This ensures that the map fills the height of the browser window, regardless of its size, it is crucial for responsiveness. --> 
-      width: 100%; <!-- The map container spans the full width of the viewport, ensuring it always fills the screen horizontally. -->
-      margin: 0; <!-- Removes any unwanted spacing around the map container caused by browser defaults, ensuring the map starts at the very top-left corner. -->
-      padding: 0; <!-- Removes any unwanted spacing around the map container caused by browser defaults, ensuring the map starts at the very top-left corner. -->
+      height: 100vh;
+      width: 100%; 
+      margin: 0; 
+      padding: 0;
     }
-<! -- Body Style for Fullscreen and No Overflow-->
+
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden; <!-- Prevents scrollbars from appearing when the map content overflows the viewport.-->
+      overflow: hidden;
     }
   </style>
 </head>

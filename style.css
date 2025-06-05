@@ -1,5 +1,5 @@
 body{
-    background-color: #1a1a1a;
+    background-color: #0b0b0b;
     font-family: Arial, sans-serif;
     color: #ffffff;
 }
@@ -9,6 +9,11 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
+    background-color: #0b0b0b;
+}
+
+.leaflet-container {
+    background-color: #0b0b0b;
 }
 
 body {

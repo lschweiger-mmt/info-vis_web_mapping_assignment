@@ -1,5 +1,7 @@
 // Initialize the map
-var map = L.map('map').setView([47.7998, 13.0453], 14); // Centered on Salzburg Altstadt
+var map = L.map('map', {
+  zoomControl: false // Remove default zoom control to add custom styled one
+}).setView([47.7998, 13.0453], 14); // Centered on Salzburg Altstadt
 
 // Define color variables to match CSS variables
 const COLORS = {
@@ -15,6 +17,11 @@ var baseMap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{
 });
 
 baseMap5.addTo(map); // Dark Theme
+
+// Add custom positioned zoom control
+L.control.zoom({
+  position: 'topleft'
+}).addTo(map);
 
 const cafeCircleStyle = {
   radius: 8,
@@ -293,7 +300,8 @@ function loadGeoJSON(url, circleStyle) {
 // Add a metric scale bar at the bottom left
 L.control.scale({
   metric: true,   
-  imperial: false 
+  imperial: false,
+  position: 'bottomleft'
 }).addTo(map);
 
 // Add a legend
@@ -307,11 +315,11 @@ function addLegend(map) {
     div.style.padding = '10px';
     div.style.borderRadius = '5px';
     div.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
-    div.style.fontFamily = 'Palatino Linotype';
-    div.style.color = 'white';
+    div.style.fontFamily = "'Noto Sans KR', sans-serif";
+    div.style.color = COLORS.TEXT;
     div.style.zIndex = '1000';
     div.innerHTML = `
-      <h4 style="margin: 0; font-size: 12pt; color: white;">Legend</h4>
+      <h4 style="margin: 0; font-size: 12pt; color: ${COLORS.TEXT};">Legend</h4>
       <div style="display: flex; align-items: center; margin-top: 8px;">
         <span style="
           display: inline-block;

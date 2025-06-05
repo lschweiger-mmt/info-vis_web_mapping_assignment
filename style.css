@@ -10,7 +10,7 @@
 
 body{
     background-color: var(--color-bg-dark);
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     color: var(--color-text);
 }
 
@@ -24,6 +24,7 @@ body{
 
 .leaflet-container {
     background-color: var(--color-bg-dark);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
 }
 
 .leaflet-popup-content {
-    font-family: 'Palatino Linotype', serif;
+    font-family: 'Noto Sans KR', sans-serif;
     padding: 5px;
 }
 
@@ -55,9 +56,66 @@ body {
 /* Style for the scale control */
 .leaflet-control-scale {
     color: var(--color-text);
-    background-color: rgba(40, 40, 40, 0.6);
+    background-color: var(--color-overlay);
     padding: 2px 5px;
     border-radius: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.leaflet-control-scale-line {
+    border-color: var(--color-text);
+    color: var(--color-text);
+    border-top: none;
+    border-bottom: 2px solid var(--color-text);
+    background-color: var(--color-overlay);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Style for zoom controls */
+.leaflet-control-zoom {
+    border: none !important;
+    margin-left: 15px !important;
+    margin-top: 15px !important;
+}
+
+.leaflet-control-zoom a {
+    background-color: var(--color-overlay) !important;
+    color: var(--color-text) !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.leaflet-control-zoom a:hover {
+    background-color: var(--color-main) !important;
+    color: var(--color-accent) !important;
+}
+
+.leaflet-control-zoom-in {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.leaflet-control-zoom-out {
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+/* Style for attribution */
+.leaflet-control-attribution {
+    background-color: var(--color-overlay) !important;
+    color: var(--color-text) !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 3px 6px !important;
+    border-radius: 4px;
+}
+
+.leaflet-control-attribution a {
+    color: var(--color-accent) !important;
+    text-decoration: none;
+}
+
+.leaflet-control-attribution a:hover {
+    text-decoration: underline;
 }
 
 /* Custom popup styles */
@@ -73,7 +131,7 @@ body {
     margin: 0;
     padding: 0;
     width: 280px !important;
-    font-family: 'Palatino Linotype', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .custom-popup .leaflet-popup-tip {
@@ -98,7 +156,7 @@ body {
 /* Restaurant name styling */
 .popup-name {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--color-accent);
     margin-bottom: 12px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -109,7 +167,7 @@ body {
 .popup-label {
     color: #aaaaaa;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
     display: inline-block;
     width: 65px;
 }
@@ -117,6 +175,7 @@ body {
 .popup-value {
     color: var(--color-text);
     font-size: 12px;
+    font-weight: 400;
 }
 
 /* Info rows styling */
@@ -137,7 +196,7 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 14px;
     transition: all 0.3s ease;
 }
@@ -154,7 +213,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   padding: 4px 8px;
-  font-family: 'Palatino Linotype', serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
   color: var(--color-text);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
@@ -162,4 +221,11 @@ body {
 
 .hover-tooltip:before {
   border-top-color: var(--color-overlay);
+}
+
+/* Legend styling */
+.legend {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  background: var(--color-overlay) !important;
+  border-radius: 5px !important;
 }

@@ -20,7 +20,7 @@ baseMap5.addTo(map); // Dark Theme
 
 // Add custom positioned zoom control
 L.control.zoom({
-  position: 'topleft'
+  position: 'bottomleft'
 }).addTo(map);
 
 // Add a title to the map
@@ -331,16 +331,16 @@ function loadGeoJSON(url, circleStyle) {
   xhr.send();
 }
 
-// Add a metric scale bar at the bottom left
+// Add a metric scale bar at the bottom right
 L.control.scale({
   metric: true,   
   imperial: false,
-  position: 'bottomleft'
+  position: 'bottomright'
 }).addTo(map);
 
 // Add a legend
 function addLegend(map) {
-  const legend = L.control({ position: 'bottomright' });
+  const legend = L.control({ position: 'bottomleft' });
 
   // Update legend to use circles instead of icons
   legend.onAdd = function () {

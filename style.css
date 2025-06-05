@@ -18,13 +18,17 @@ body{
 .map-title {
     position: absolute;
     top: 15px;
-    left: 60px;
+    left: 15px;
     z-index: 1000;
-    font-size: 24px;
+    font-size: 44px;
     font-weight: 700;
     color: var(--color-accent);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     pointer-events: none; /* Allow clicking through the title */
+    padding: 5px 10px;
+    background-color: rgba(11, 11, 11, 0.4);
+    border-radius: 6px;
+    letter-spacing: 0.5px;
 }
 
 #map {
@@ -89,7 +93,9 @@ body {
 .leaflet-control-zoom {
     border: none !important;
     margin-left: 15px !important;
-    margin-top: 15px !important;
+    margin-bottom: 15px !important; /* Position closer to bottom */
+    display: flex !important; /* Make controls horizontal */
+    flex-direction: row !important;
 }
 
 .leaflet-control-zoom a {
@@ -97,6 +103,10 @@ body {
     color: var(--color-text) !important;
     border: none !important;
     transition: all 0.3s ease;
+    margin: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
 }
 
 .leaflet-control-zoom a:hover {
@@ -106,12 +116,16 @@ body {
 
 .leaflet-control-zoom-in {
     border-top-left-radius: 4px !important;
-    border-top-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .leaflet-control-zoom-out {
-    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
     border-bottom-right-radius: 4px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
 }
 
 /* Style for attribution */
@@ -264,4 +278,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif !important;
   background: var(--color-overlay) !important;
   border-radius: 5px !important;
+  margin-left: 15px !important; /* Align with zoom controls */
+  margin-bottom: 55px !important; /* Position above zoom controls */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5) !important;
 }

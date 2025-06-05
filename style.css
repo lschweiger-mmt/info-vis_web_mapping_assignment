@@ -137,3 +137,19 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* Hover tooltip styles */
+.hover-tooltip {
+  background-color: rgba(40, 40, 40, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: 'Palatino Linotype', serif;
+  font-size: 14px;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hover-tooltip:before {
+  border-top-color: rgba(40, 40, 40, 0.9);
+}

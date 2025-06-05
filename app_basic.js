@@ -31,7 +31,17 @@ loadGeoJSON('export.geojson', cafeCircleStyle);
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
   if (feature.properties && feature.properties.name) {
-    // Create a custom popup with formatted content
+    // Create simple hover label that only shows the name
+    const hoverLabel = L.tooltip({
+      permanent: false,
+      direction: 'top',
+      className: 'hover-tooltip'
+    }).setContent(`<div>${feature.properties.name || 'Restaurant'}</div>`);
+    
+    // Bind the tooltip for hover effect
+    layer.bindTooltip(hoverLabel);
+    
+    // Create a custom popup with detailed content for click
     const popupContent = createPopupContent(feature.properties);
     
     // Bind the popup to the layer
@@ -43,11 +53,16 @@ function onEachFeature(feature, layer) {
     
     layer.bindPopup(popup);
     
-    // Add hover behavior
+    // Add hover and click behaviors
     layer.on({
       mouseover: function(e) {
-        this.openPopup();
+        this.openTooltip();
+      },
+      mouseout: function(e) {
+        this.closeTooltip();
       }
+      // Let the default click behavior handle opening the popup
+      // The popup will stay open until closed
     });
   }
 }

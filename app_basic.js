@@ -51,8 +51,25 @@ const favCafeCircleStyle = {
   fillOpacity: 1
 };
 
-// Load the all-fav.geojson and favcafes.geojson files with circle markers
-loadGeoJSON('export.geojson', cafeCircleStyle);
+// Create a variable to store the current GeoJSON layer
+let currentGeoJsonLayer = null;
+
+// Define the country data with file paths and map bounds
+const countryData = {
+  austria: {
+    file: 'austria.geojson',
+    title: 'Vegan friendly restaurants in Austria',
+    bounds: [[46.3723, 9.5307], [49.0205, 17.1608]] // SW and NE corners of Austria
+  },
+  japan: {
+    file: 'japan.geojson',
+    title: 'Vegan friendly restaurants in Japan',
+    bounds: [[30.9787, 129.4966], [45.5231, 145.8435]] // SW and NE corners of Japan
+  }
+};
+
+// Initial load of Austria data
+loadCountryData('austria');
 
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
@@ -254,6 +271,23 @@ function calculateCentroid(geometry) {
   }
 }
 
+// Function to load and display GeoJSON data for a specific country
+function loadCountryData(country) {
+  // Update the map title
+  mapTitle.innerHTML = countryData[country].title;
+  
+  // Clear existing layer if it exists
+  if (currentGeoJsonLayer) {
+    map.removeLayer(currentGeoJsonLayer);
+  }
+  
+  // Fit map to the country bounds
+  map.fitBounds(countryData[country].bounds);
+  
+  // Load the GeoJSON for the selected country
+  loadGeoJSON(countryData[country].file, cafeCircleStyle);
+}
+
 // Function to load and display GeoJSON data using circle markers
 function loadGeoJSON(url, circleStyle) {
   var xhr = new XMLHttpRequest();
@@ -310,6 +344,9 @@ function loadGeoJSON(url, circleStyle) {
         },
         onEachFeature: onEachFeature
       }).addTo(map);
+      
+      // Store the current layer for later removal when switching countries
+      currentGeoJsonLayer = geoJsonLayer;
       
       // Update circle sizes when zoom changes
       map.on('zoomend', function() {
@@ -384,6 +421,47 @@ function addLegend(map) {
 
 // Call the legend function
 addLegend(map);
+
+// Add the country selector control
+function addCountrySelector(map) {
+  const countrySelector = L.control({ position: 'topright' });
+  
+  countrySelector.onAdd = function() {
+    const div = L.DomUtil.create('div', 'country-selector');
+    div.innerHTML = `
+      <div class="selector-container">
+        <label class="country-option">
+          <input type="radio" name="country" value="austria" checked>
+          <span class="country-label">Austria</span>
+        </label>
+        <label class="country-option">
+          <input type="radio" name="country" value="japan">
+          <span class="country-label">Japan</span>
+        </label>
+      </div>
+    `;
+    
+    // Prevent click events from propagating to the map
+    L.DomEvent.disableClickPropagation(div);
+    
+    // Add event listeners to the radio buttons
+    const radioButtons = div.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.checked) {
+          loadCountryData(this.value);
+        }
+      });
+    });
+    
+    return div;
+  };
+  
+  countrySelector.addTo(map);
+}
+
+// Add the country selector
+addCountrySelector(map);
 
 // Trigger map resize when the window resizes
 window.addEventListener('resize', function () {

@@ -73,9 +73,12 @@ loadCountryData('austria');
 
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
-  if (feature.properties && feature.properties.name) {
+  if (feature.properties) {
+    // Get the restaurant name (prefer English name if available)
+    const restaurantName = feature.properties['name:en'] || feature.properties.name || 'Restaurant';
+    
     // Create tooltip with name and address if available
-    let tooltipContent = `<div style="text-align: center; font-weight: 500;">${feature.properties.name || 'Restaurant'}`;
+    let tooltipContent = `<div style="text-align: center; font-weight: 500;">${restaurantName}`;
     
     // Add address if available
     if (feature.properties.addr_street || feature.properties.addr_housenumber) {
@@ -162,8 +165,9 @@ function createPopupContent(properties) {
   // Create container for popup content
   let content = '<div class="popup-container">';
   
-  // Restaurant name
-  content += `<div class="popup-name">${properties.name || 'Restaurant'}</div>`;
+  // Restaurant name (prefer English name if available)
+  const restaurantName = properties['name:en'] || properties.name || 'Restaurant';
+  content += `<div class="popup-name">${restaurantName}</div>`;
   
   // Opening hours if available
   if (properties.opening_hours) {

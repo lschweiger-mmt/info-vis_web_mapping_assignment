@@ -1,4 +1,6 @@
-# Vegan-Friendly Restaurants – Interactive Web Map with Leaflet
+# Vegan friendly restaurants – Interactive Web Map with Leaflet
+
+![Screenshot](image.png)
 
 ## Introduction
 

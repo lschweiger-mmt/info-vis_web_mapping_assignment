@@ -1,6 +1,15 @@
 // Initialize the map
 var map = L.map('map').setView([47.7998, 13.0453], 14); // Centered on Salzburg Altstadt
 
+// Define color variables to match CSS variables
+const COLORS = {
+  MAIN: '#282828',     // Dark gray
+  TEXT: '#ffffff',     // White text
+  ACCENT: '#8CFFDA',   // Teal accent color
+  SECONDARY: '#555555', // Secondary gray
+  BG_DARK: '#0b0b0b'   // Background dark
+};
+
 var baseMap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
 });
@@ -9,8 +18,8 @@ baseMap5.addTo(map); // Dark Theme
 
 const cafeCircleStyle = {
   radius: 8,
-  fillColor: "#ffffff",
-  color: "#555555",
+  fillColor: COLORS.TEXT,
+  color: COLORS.SECONDARY,
   weight: 0,
   opacity: 1,
   fillOpacity: 1
@@ -18,8 +27,8 @@ const cafeCircleStyle = {
 
 const favCafeCircleStyle = {
   radius: 8,
-  fillColor: "#ffeb3b",
-  color: "#ffc107",
+  fillColor: COLORS.ACCENT,
+  color: COLORS.ACCENT,
   weight: 0,
   opacity: 1,
   fillOpacity: 1
@@ -309,8 +318,8 @@ function addLegend(map) {
           width: 16px;
           height: 16px;
           border-radius: 50%;
-          background-color: #ffffff;
-          border: 1px solid #555555;
+          background-color: ${COLORS.TEXT};
+          border: 1px solid ${COLORS.SECONDARY};
           margin-right: 8px;
         "></span>
         <span style="font-size: 10pt;">Cafes</span>
@@ -321,8 +330,8 @@ function addLegend(map) {
           width: 20px;
           height: 20px;
           border-radius: 50%;
-          background-color: #ffeb3b;
-          border: 1px solid #ffc107;
+          background-color: ${COLORS.ACCENT};
+          border: 1px solid ${COLORS.ACCENT};
           margin-right: 8px;
         "></span>
         <span style="font-size: 10pt;">Favorite Cafes</span>

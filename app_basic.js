@@ -660,6 +660,7 @@ function addCuisineSelector(map) {
         <button id="clear-cuisine" title="Clear filter">×</button>
       </div>
       <div id="cuisine-suggestions" class="cuisine-suggestions"></div>
+      <div id="cuisine-count" class="cuisine-count"></div>
     `;
     
     // Prevent click events from propagating to the map
@@ -680,18 +681,22 @@ function initCuisineSelector() {
   const input = document.getElementById('cuisine-input');
   const suggestionsContainer = document.getElementById('cuisine-suggestions');
   const clearButton = document.getElementById('clear-cuisine');
+  const countDisplay = document.getElementById('cuisine-count');
   
   // Variable to store available cuisines from current data
   let availableCuisines = [];
   let currentFilter = null;
+  let totalPoints = 0;
   
   // Function to extract cuisines from GeoJSON data
   function extractCuisinesFromData() {
     if (!currentGeoJsonLayer) return [];
     
     const cuisines = new Set();
+    let count = 0;
     
     currentGeoJsonLayer.eachLayer(function(layer) {
+      count++;
       if (layer.feature && layer.feature.properties && layer.feature.properties.cuisine) {
         // Split by semicolon since OSM data uses semicolons to separate multiple cuisines
         const cuisineList = layer.feature.properties.cuisine.split(';');
@@ -710,7 +715,27 @@ function initCuisineSelector() {
       }
     });
     
+    // Update total point count
+    totalPoints = count;
+    
+    // Update the count display to show total points
+    updateCountDisplay(totalPoints, totalPoints);
+    
     return Array.from(cuisines).sort();
+  }
+  
+  // Function to update the count display
+  function updateCountDisplay(filtered, total) {
+    if (countDisplay) {
+      countDisplay.textContent = `Showing ${filtered} of ${total} restaurants`;
+      
+      // Add a class when filtered to highlight the count
+      if (filtered < total) {
+        countDisplay.classList.add('filtered');
+      } else {
+        countDisplay.classList.remove('filtered');
+      }
+    }
   }
   
   // Function to show suggestions based on input
@@ -757,6 +782,8 @@ function initCuisineSelector() {
   function filterMapByCuisine(cuisine) {
     if (!currentGeoJsonLayer) return;
     
+    let matchCount = 0;
+    
     currentGeoJsonLayer.eachLayer(function(layer) {
       if (layer.feature && layer.feature.properties) {
         const properties = layer.feature.properties;
@@ -776,6 +803,7 @@ function initCuisineSelector() {
               opacity: 1,
               fillOpacity: 1
             });
+            matchCount++;
           } else {
             // Hide the layer by making it nearly transparent
             layer.setStyle({
@@ -792,6 +820,9 @@ function initCuisineSelector() {
         }
       }
     });
+    
+    // Update the count display
+    updateCountDisplay(matchCount, totalPoints);
   }
   
   // Function to clear the cuisine filter
@@ -809,6 +840,9 @@ function initCuisineSelector() {
         });
       });
     }
+    
+    // Reset count display
+    updateCountDisplay(totalPoints, totalPoints);
   }
   
   // Event listener for input field
@@ -842,9 +876,6 @@ function initCuisineSelector() {
 
 // Add the country selector
 addCountrySelector(map);
-
-// Add the legend
-addLegend(map);
 
 // Add the cuisine selector
 addCuisineSelector(map);

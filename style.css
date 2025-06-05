@@ -361,7 +361,8 @@ body {
   border: none; /* No outline */
   font-family: 'Noto Sans KR', sans-serif !important;
   z-index: 1000; /* Ensure it's above other controls */
-  min-width: 200px;
+  min-width: 100px;
+  max-width: 200px;
 }
 
 .cuisine-input-container {
@@ -424,6 +425,20 @@ body {
   color: var(--color-accent);
 }
 
+/* Count display styling */
+.cuisine-count {
+  margin-top: 8px;
+  font-size: 10pt;
+  color: #888888;
+  text-align: right;
+  transition: color 0.3s ease;
+}
+
+.cuisine-count.filtered {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
 /* Custom scrollbar for suggestions */
 .cuisine-suggestions::-webkit-scrollbar {
   width: 6px;
@@ -441,9 +456,4 @@ body {
 
 .cuisine-suggestions::-webkit-scrollbar-thumb:hover {
   background: #666666;
-}
-
-/* Adjust control positions to avoid overlap */
-.legend {
-  margin-bottom: 75px !important; /* Increase spacing to make room for cuisine selector */
 }

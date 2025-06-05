@@ -1,0 +1,872 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2025-01-28T10:15:30Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 268243632,
+      "lat": 47.8026888,
+      "lon": 13.0438732,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:housenumber": "8",
+        "addr:postcode": "5020",
+        "addr:street": "Makartplatz",
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Cafe Classic",
+        "opening_hours": "Mo-Sa 08:00-19:30",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 268243640,
+      "lat": 47.8018642,
+      "lon": 13.0438317,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Schwarzstraße",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2023-07-22",
+        "cuisine": "regional;coffee_shop",
+        "email": "info@cafe-bazar.at",
+        "internet_access": "wlan",
+        "name": "Cafe Bazar",
+        "opening_hours": "Mo-Sa 07:30-19:30; Su 09:00-18:00",
+        "payment:credit_cards": "no",
+        "phone": "+43 662 874278",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.cafe-bazar.at/",
+        "wheelchair": "limited",
+        "wikidata": "Q1025574",
+        "wikipedia": "de:Café Bazar (Salzburg)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 268243668,
+      "lat": 47.7982223,
+      "lon": 13.043139,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-03-18",
+        "cuisine": "cake",
+        "name": "220GRAD",
+        "opening_hours": "Tu,Th-Su 09:00-18:00; We 09:00-20:00",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "website": "https://www.220grad.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 268243701,
+      "lat": 47.7988743,
+      "lon": 13.0450495,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-06-29",
+        "name": "Kiosk Cafe Tomaselli",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 268243703,
+      "lat": 47.7991204,
+      "lon": 13.0455572,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "13",
+        "addr:postcode": "5020",
+        "addr:street": "Brodgasse",
+        "amenity": "cafe",
+        "check_date": "2023-06-29",
+        "contact:phone": "+43 662 843 759-0",
+        "cuisine": "cake",
+        "indoor_seating": "yes",
+        "name": "Confiserie Konditorei Fürst",
+        "name:ru": "Кафе Ферст",
+        "opening_hours": "Mo-Sa 09:00-19:00; Su,PH 10:00-17:00",
+        "operator": "Café Konditorei Fürst GmbH",
+        "outdoor_seating": "yes",
+        "phone": "+43 662 843 759-0",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description": "Eingang links über Lieferzugang, dort kleine Schwelle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 317987180,
+      "lat": 47.799627,
+      "lon": 13.0435715,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-08-22",
+        "name": "Café in Mozarts Geburtshaus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 572229594,
+      "lat": 47.7969396,
+      "lon": 13.0548525,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-07-03",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "indoor_seating": "yes",
+        "name": "Tula Bistro",
+        "opening_hours": "Mo-Fr 11:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+43 660 9877011",
+        "website": "https://www.tula-bistro.at/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 814217464,
+      "lat": 47.8000821,
+      "lon": 13.0426305,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "22",
+        "addr:postcode": "5020",
+        "addr:street": "Getreidegasse",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-02-02",
+        "contact:email": "info@cafemozartsalzburg.at",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Café Mozart",
+        "opening_hours": "Mo-Sa 08:00-21:00; Su 09:00-21:00",
+        "outdoor_seating": "no",
+        "phone": "+43662843958",
+        "toilets:wheelchair": "no",
+        "website": "https://www.cafemozartsalzburg.at/",
+        "wheelchair": "yes",
+        "wikidata": "Q1025644"
+      }
+    },
+    {
+      "type": "node",
+      "id": 814235255,
+      "lat": 47.8005932,
+      "lon": 13.0431902,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "13",
+        "addr:postcode": "5020",
+        "addr:street": "Griesgasse",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "layer": "1",
+        "name": "Cafe Würfelzucker",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 814235470,
+      "lat": 47.8003541,
+      "lon": 13.0397096,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:housenumber": "5",
+        "addr:postcode": "5020",
+        "addr:street": "Bürgerspitalplatz",
+        "amenity": "cafe",
+        "cuisine": "african;breakfast;burger",
+        "diet:vegetarian": "yes",
+        "email": "cafe.salzburg@afrocoffee.com",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:access": "customers",
+        "internet_access:fee": "no",
+        "name": "Afro Cafe",
+        "opening_hours": "Mo-Sa 09:00-20:00",
+        "outdoor_seating": "yes",
+        "phone": "+43 662 844888",
+        "website": "https://afrocoffee.com/",
+        "website:menu": "https://afrocoffee.com/afro-cafe-salzburg/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 814276649,
+      "lat": 47.8004793,
+      "lon": 13.0429888,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "15",
+        "addr:postcode": "5020",
+        "addr:street": "Griesgasse",
+        "amenity": "cafe",
+        "name": "Kramer's",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 827323877,
+      "lat": 47.801989,
+      "lon": 13.043585,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "5-7",
+        "addr:postcode": "5020",
+        "addr:street": "Schwarzstraße",
+        "amenity": "cafe",
+        "check_date": "2024-02-05",
+        "name": "Café Sacher - Salzachgrill",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1650949386,
+      "lat": 47.7989786,
+      "lon": 13.049474,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "38",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolfskai",
+        "amenity": "cafe",
+        "contact:email": "post@kaffee-alchemie.at",
+        "contact:facebook": "https://www.facebook.com/KaffeeAlchemie",
+        "contact:mobile": "+43 681 2017 3143",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "int_name": "Coffee-Alchemy",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Kaffee Alchemie",
+        "opening_hours": "Mo-Fr 07:30-18:00; Sa 09:00-18:00; Su,PH off",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1678153193,
+      "lat": 47.7992203,
+      "lon": 13.0448825,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "9",
+        "addr:postcode": "5020",
+        "addr:street": "Alter Markt",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2022-09-30",
+        "indoor_seating": "yes",
+        "name": "Café Tomaselli",
+        "name:ru": "Кафе Томаселли",
+        "opening_hours": "Mo-Sa 07:00-19:00; Su 08:00-19:00",
+        "outdoor_seating": "yes",
+        "phone": "+43 (0) 662 - 84 44 88-0",
+        "website": "https://tomaselli.at/",
+        "wheelchair": "no",
+        "wikidata": "Q980334",
+        "wikipedia": "de:Café Tomaselli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1691680861,
+      "lat": 47.8021374,
+      "lon": 13.0448107,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:housename": "Café Central",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Dreifaltigkeitsgasse",
+        "amenity": "cafe",
+        "name": "Café Central",
+        "website": "www.central-salzburg.at",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1836868056,
+      "lat": 47.7997588,
+      "lon": 13.043797,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "15",
+        "addr:postcode": "5020",
+        "addr:street": "Universitätsplatz",
+        "amenity": "cafe",
+        "email": "info@cafeno5-salzburg.at",
+        "name": "Cafe No. 5",
+        "opening_hours": "Mo-Sa 09:00-17:00; Su 10:00-17:00; We,Th off",
+        "outdoor_seating": "yes",
+        "phone": "+43 660 52 57 670",
+        "website": "https://www.cafeno5-salzburg.at"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1942706060,
+      "lat": 47.7999317,
+      "lon": 13.0418015,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-08-10",
+        "check_date:opening_hours": "2024-04-24",
+        "cuisine": "ice_cream",
+        "indoor_seating": "yes",
+        "name": "Café Getreidegasse",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2222963672,
+      "lat": 47.7998889,
+      "lon": 13.0538125,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "45",
+        "addr:postcode": "5020",
+        "addr:street": "Imbergstraße",
+        "amenity": "cafe",
+        "cuisine": "austrian",
+        "name": "Die Pâtissière",
+        "opening_hours": "Tu-Fr 09:00-18:00; Sa 09:00-17:00",
+        "phone": "+4366452222935",
+        "website": "http://www.die-patissiere.at"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2261987891,
+      "lat": 47.7978606,
+      "lon": 13.0495427,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "5",
+        "addr:postcode": "5020",
+        "addr:street": "Chiemseegasse",
+        "amenity": "cafe",
+        "at_bev:addr_date": "2020-10-01",
+        "contact:website": "kaffeehaus-salzburg.at",
+        "email": "kaffeehaus@hotel-melanie.at",
+        "internet_access": "wlan",
+        "name": "Das Kaffeehaus",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+43 660 159 76 69",
+        "website": "https://kaffeehaus-salzburg.at/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2367327480,
+      "lat": 47.7986175,
+      "lon": 13.0475043,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "1",
+        "addr:postcode": "5020",
+        "addr:street": "Mozartplatz",
+        "amenity": "cafe",
+        "check_date": "2025-01-07",
+        "check_date:opening_hours": "2025-01-07",
+        "indoor_seating": "yes",
+        "name": "MUS.Cafè Museum",
+        "opening_hours": "Mo-We 08:30-19:00; Th-Su 08:30-21:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.cafemus.at/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2377437237,
+      "lat": 47.8003649,
+      "lon": 13.0434256,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "1",
+        "addr:postcode": "5020",
+        "addr:street": "Hagenauerplatz",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "name": "Starbucks",
+        "name:ru": "Старбаск-кафе",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Su,PH 08:00-20:30",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2463216022,
+      "lat": 47.7984985,
+      "lon": 13.0491159,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Pfeifergasse",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "Fasties",
+        "opening_hours": "Mo-Fr 09:00-20:00;Sa 09:00-17:00",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2463216023,
+      "lat": 47.7978238,
+      "lon": 13.0491044,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "1",
+        "addr:postcode": "5020",
+        "addr:street": "Chiemseegasse",
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "diet:vegan": "yes",
+        "name": "Icezeit",
+        "takeaway": "yes",
+        "website": "https://www.icezeit.at/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2522245261,
+      "lat": 47.8016608,
+      "lon": 13.0392889,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Stadt-Cafè",
+        "opening_hours": "Sa-We 08:30-17:00",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2526886675,
+      "lat": 47.7984174,
+      "lon": 13.0440864,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "11",
+        "addr:postcode": "5020",
+        "addr:street": "Sigmund-Haffner-Gasse",
+        "amenity": "cafe",
+        "name": "M-Cafe imToskanatrakt",
+        "source": "http://www.mensen.at/",
+        "website": "http://www.mensen.at/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3624045141,
+      "lat": 47.79908,
+      "lon": 13.0436371,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "5020",
+        "addr:street": "Wiener-Philharmoniker-Gasse",
+        "amenity": "cafe",
+        "cuisine": "austrian",
+        "name": "Herr Leopold",
+        "opening_hours": "Sa-Su 08:00-20:00; Mo-Fr 07:30-20:00",
+        "operator": "Justus Holzmann Soraya Kühlwein",
+        "phone": "+43662840510",
+        "website": "http://www.herr-leopold.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3638700486,
+      "lat": 47.7996473,
+      "lon": 13.043899,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Getreidegasse",
+        "amenity": "cafe",
+        "cuisine": "coffee",
+        "indoor_seating": "yes",
+        "name": "Schatz-Konditorei",
+        "opening_hours": "Mo-Fr 09:00-18:30; Sa 8:00-17:00",
+        "outdoor_seating": "yes",
+        "website": "https://schatz-konditorei.at/",
+        "wikidata": "Q1692261",
+        "wikipedia": "de:Schatz-Konditorei"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4755892735,
+      "lat": 47.8026947,
+      "lon": 13.0456479,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "diet:vegan": "yes",
+        "name": "Timeless",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4830900687,
+      "lat": 47.8023414,
+      "lon": 13.0430538,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "5-7",
+        "addr:postcode": "5020",
+        "addr:street": "Schwarzstraße",
+        "amenity": "cafe",
+        "name": "Café Sacher",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "source": "visit",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5150138026,
+      "lat": 47.7989725,
+      "lon": 13.0471263,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-05-30",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Café Glockenspiel",
+        "opening_hours": "We-Su 10:00-18:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5434309258,
+      "lat": 47.7998873,
+      "lon": 13.0401651,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-04-12",
+        "indoor_seating": "no",
+        "name": "nur coffee",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no",
+        "payment:cash": "no",
+        "takeaway": "only",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5740488878,
+      "lat": 47.7994116,
+      "lon": 13.0487203,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-08-10",
+        "cuisine": "coffee_shop",
+        "name": "We Love Coffee",
+        "opening_hours": "Mo-Fr 07:30-18:00; Sa, Su 09:00-18:00",
+        "takeaway": "only",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5740605925,
+      "lat": 47.7966475,
+      "lon": 13.0515267,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-06-27",
+        "name": "Lindy's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5740606430,
+      "lat": 47.7956311,
+      "lon": 13.0525031,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "check_date": "2023-06-27",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "220Grad Nonntal",
+        "opening_hours": "Tu-Fr 09:00-19:00; Sa 09:00-18:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5740631821,
+      "lat": 47.7971433,
+      "lon": 13.0495664,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Secession"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5740637327,
+      "lat": 47.7966934,
+      "lon": 13.0512935,
+      "tags": {
+        "amenity": "cafe",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5743196921,
+      "lat": 47.8016524,
+      "lon": 13.0452947,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "1",
+        "addr:postcode": "5020",
+        "addr:street": "Steingasse",
+        "amenity": "cafe",
+        "at_bev:addr_date": "2023-10-01",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Darwin",
+        "opening_hours": "Mo-Su,PH 09:00-24:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5743321322,
+      "lat": 47.801528,
+      "lon": 13.0453527,
+      "tags": {
+        "addr:housenumber": "4",
+        "addr:street": "Steingasse",
+        "amenity": "cafe",
+        "description": "Organic cafe cum brunch restaurant",
+        "name": "Rosencafé",
+        "opening_hours": "We-Su 09:00-17:00",
+        "opening_hours:signed": "no",
+        "organic": "only",
+        "website": "https://rosen.cafe/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7448406115,
+      "lat": 47.7982813,
+      "lon": 13.0491022,
+      "tags": {
+        "amenity": "cafe",
+        "cafe": "bistro",
+        "name": "Alvera Montemio",
+        "phone": "+43 676 7283465",
+        "website": "https://www.alvera-montemio.at"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9425725904,
+      "lat": 47.800593,
+      "lon": 13.0397623,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Coolinarik",
+        "opening_hours": "Tu-Su 09:00-18:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11768431878,
+      "lat": 47.8008816,
+      "lon": 13.0408457,
+      "tags": {
+        "addr:housenumber": "2a",
+        "addr:street": "Griesgasse",
+        "amenity": "cafe",
+        "check_date": "2024-03-28",
+        "cuisine": "cake;coffee_shop",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "KAVA Coffee Roasters",
+        "opening_hours": "Mo-Sa 09:00-17:30",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+49 176 44200153",
+        "website": "https://kavacoffee.de",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11844141825,
+      "lat": 47.8003152,
+      "lon": 13.0449021,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "Boba and Chill",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12247181724,
+      "lat": 47.7997736,
+      "lon": 13.0439275,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Getreidegasse",
+        "amenity": "cafe",
+        "at_bev:addr_date": "2024-04-01",
+        "name": "Kaffeeothek",
+        "phone": "+43724235019912",
+        "website": "https://www.kaffeeothek.at/standorte/kaffeeothek-salzburg/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12454180701,
+      "lat": 47.7966853,
+      "lon": 13.0498305,
+      "tags": {
+        "addr:housenumber": "26",
+        "addr:postcode": "5020",
+        "addr:street": "Kaigasse",
+        "amenity": "cafe",
+        "contact:instagram": "mamakerscafe",
+        "name": "MA MAKERS Café",
+        "opening_hours": "We-Su 09:00-18:00",
+        "website:menu": "https://linktr.ee/mamakerscafe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 64132690,
+      "bounds": {
+        "minlat": 47.799709,
+        "minlon": 13.0424774,
+        "maxlat": 47.7998406,
+        "maxlon": 13.0425419
+      },
+      "nodes": [
+        790627443,
+        790626345,
+        2377499301,
+        2612621870,
+        2377499306,
+        790627443
+      ],
+      "geometry": [
+        {
+          "lat": 47.7998378,
+          "lon": 13.0424774
+        },
+        {
+          "lat": 47.7998406,
+          "lon": 13.0425313
+        },
+        {
+          "lat": 47.7997617,
+          "lon": 13.0425371
+        },
+        {
+          "lat": 47.7997099,
+          "lon": 13.0425419
+        },
+        {
+          "lat": 47.799709,
+          "lon": 13.0424948
+        },
+        {
+          "lat": 47.7998378,
+          "lon": 13.0424774
+        }
+      ],
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "indoor_seating": "yes",
+        "name": "Fabrizi Espresso",
+        "opening_hours": "Mo-Sa 07:00-19:00; Su,PH 09:00-18:00",
+        "operator": "Schicker Michael",
+        "outdoor_seating": "yes",
+        "phone": "+43-662-845914",
+        "smoking": "yes"
+      }
+    }
+  ]
+}

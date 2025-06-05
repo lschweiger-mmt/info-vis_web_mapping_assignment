@@ -1,0 +1,48 @@
+fetch('export.geojson')
+    .then(response => response.json())
+    .then(data => {
+        console.log('Loaded GeoJSON:', data); // Check if data is loaded
+        L.geoJSON(data, {
+            style: styleFeature,
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.name) {
+                    layer.bindPopup(`<b>${feature.properties.name}</b>`);
+                }
+            }
+        }).addTo(map);
+    })
+    .catch(error => console.error('Error loading GeoJSON:', error));
+	
+	const legend = L.control({ position: 'bottomright' });
+
+legend.onAdd = function () {
+  console.log("Legend onAdd function executed...");
+  const div = L.DomUtil.create('div', 'legend');
+  div.style.background = 'white';
+  div.style.padding = '10px';
+  div.style.borderRadius = '5px';
+  div.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
+  div.innerHTML = `
+    <h4 style="margin: 0; font-size: 12pt; font-family: 'Palatino Linotype'; color: darkgray;">Legend</h4>
+    <div style="display: flex; align-items: center; margin-top: 5px;">
+      <img src="images/favcafe-icon.png" alt="Fav Cafe" style="width: 24px; height: 24px; margin-right: 8px;">
+      <span style="font-size: 10pt; color: darkgray;">Favorite Cafes</span>
+    </div>
+  `;
+  return div;
+};
+
+console.log("Adding legend to the map...");
+legend.addTo(map);
+console.log("Legend added successfully!");
+
+console.log("Testing icon path: http://localhost:8000/images/favcafe-icon.png");
+console.log("Leaflet control available:", L.control);
+
+setTimeout(() => {
+  const legendDiv = document.querySelector('.legend');
+  console.log("Legend div found in DOM:", !!legendDiv);
+  if (legendDiv) {
+    console.log("Legend div styles:", window.getComputedStyle(legendDiv));
+  }
+}, 1000);

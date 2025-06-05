@@ -1,6 +1,7 @@
 body{
-    background-color: #f0f0f0;
+    background-color: #1a1a1a;
     font-family: Arial, sans-serif;
+    color: #ffffff;
 }
 
 #map {
@@ -14,4 +15,32 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+/* Style for popups to match dark theme */
+.leaflet-popup-content-wrapper {
+    background-color: rgba(40, 40, 40, 0.9);
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.leaflet-popup-tip {
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
+.leaflet-popup-content {
+    font-family: 'Palatino Linotype', serif;
+    padding: 5px;
+}
+
+.leaflet-popup-content b {
+    color: #ffeb3b;
+}
+
+/* Style for the scale control */
+.leaflet-control-scale {
+    color: white;
+    background-color: rgba(40, 40, 40, 0.6);
+    padding: 2px 5px;
+    border-radius: 4px;
 }

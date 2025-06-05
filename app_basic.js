@@ -7,25 +7,27 @@ var baseMap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{
 
 baseMap5.addTo(map); // Dark Theme
 
-// Define custom icons for regular cafes and favorite cafes
-const cafeIcon = L.icon({
-  iconUrl: 'images/cafe-icon.png',
-  iconSize: [25, 25],
-  iconAnchor: [16, 32],
-  popupAnchor: [0, -32]
-});
+const cafeCircleStyle = {
+  radius: 8,
+  fillColor: "#ffffff",
+  color: "#555555",
+  weight: 0,
+  opacity: 1,
+  fillOpacity: 1
+};
 
-const favCafeIcon = L.icon({
-  iconUrl: 'images/favcafe-icon2.png',
-  iconSize: [32, 26],
-  iconAnchor: [16, 32],
-  popupAnchor: [0, -32]
-});
+const favCafeCircleStyle = {
+  radius: 8,
+  fillColor: "#ffeb3b",
+  color: "#ffc107",
+  weight: 0,
+  opacity: 1,
+  fillOpacity: 1
+};
 
-
-// Load the all-fav.geojson and favcafes.geojson files
-loadGeoJSON('all-fav.geojson', cafeIcon);
-loadGeoJSON('favcafes.geojson', favCafeIcon);
+// Load the all-fav.geojson and favcafes.geojson files with circle markers
+loadGeoJSON('all-fav.geojson', cafeCircleStyle);
+loadGeoJSON('favcafes.geojson', favCafeCircleStyle);
 
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
@@ -34,8 +36,25 @@ function onEachFeature(feature, layer) {
   }
 }
 
-// Function to load and display GeoJSON data
-function loadGeoJSON(url, icon) {
+// Function to calculate circle radius based on zoom level
+function getRadiusForZoom(baseRadius) {
+  const currentZoom = map.getZoom();
+  // Scale factor: circles get smaller at higher zoom levels and larger at lower zoom levels
+  if (currentZoom <= 10) {
+    return baseRadius * 0.6;
+  } else if (currentZoom <= 12) {
+    return baseRadius * 0.8;
+  } else if (currentZoom <= 14) {
+    return baseRadius;
+  } else if (currentZoom <= 16) {
+    return baseRadius * 1.2;
+  } else {
+    return baseRadius * 1.4;
+  }
+}
+
+// Function to load and display GeoJSON data using circle markers
+function loadGeoJSON(url, circleStyle) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
   xhr.responseType = 'json';
@@ -43,12 +62,35 @@ function loadGeoJSON(url, icon) {
   xhr.onload = function () {
     if (xhr.status >= 200 && xhr.status < 300) {
       var data = xhr.response;
-      L.geoJSON(data, {
+      
+      // Create a GeoJSON layer with circle markers
+      var geoJsonLayer = L.geoJSON(data, {
         pointToLayer: function (feature, latlng) {
-          return L.marker(latlng, { icon: icon });
+          // Create a copy of the style to avoid modifying the original
+          const style = Object.assign({}, circleStyle);
+          
+          // Set the radius based on current zoom level
+          style.radius = getRadiusForZoom(circleStyle.radius);
+          
+          // Create the circle marker with the adjusted style
+          return L.circleMarker(latlng, style);
         },
         onEachFeature: onEachFeature
       }).addTo(map);
+      
+      // Update circle sizes when zoom changes
+      map.on('zoomend', function() {
+        geoJsonLayer.eachLayer(function(layer) {
+          if (layer instanceof L.CircleMarker) {
+            // Determine which style to use based on the layer's current color
+            const baseStyle = (layer.options.fillColor === "#ffeb3b") ? 
+                              favCafeCircleStyle : cafeCircleStyle;
+                              
+            // Update the radius based on new zoom level
+            layer.setRadius(getRadiusForZoom(baseStyle.radius));
+          }
+        });
+      });
     } else {
       console.error(`❌ Error loading ${url}: ${xhr.status} ${xhr.statusText}`);
     }
@@ -71,24 +113,40 @@ L.control.scale({
 function addLegend(map) {
   const legend = L.control({ position: 'bottomright' });
 
-  // LEGEND STYLE 1: Default style
+  // Update legend to use circles instead of icons
   legend.onAdd = function () {
     const div = L.DomUtil.create('div', 'legend');
-    div.style.background = 'white';
+    div.style.background = 'rgba(40, 40, 40, 0.8)';
     div.style.padding = '10px';
     div.style.borderRadius = '5px';
     div.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
     div.style.fontFamily = 'Palatino Linotype';
-    div.style.color = 'darkgray';
+    div.style.color = 'white';
     div.style.zIndex = '1000';
     div.innerHTML = `
-      <h4 style="margin: 0; font-size: 12pt; color: darkgray;">Legend</h4>
-      <div style="display: flex; align-items: center; margin-top: 5px;">
-        <img src="images/cafe-icon.png" alt="Cafe" style="width: 25px; height: 25px; margin-right: 8px;">
+      <h4 style="margin: 0; font-size: 12pt; color: white;">Legend</h4>
+      <div style="display: flex; align-items: center; margin-top: 8px;">
+        <span style="
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: #ffffff;
+          border: 1px solid #555555;
+          margin-right: 8px;
+        "></span>
         <span style="font-size: 10pt;">Cafes</span>
       </div>
-      <div style="display: flex; align-items: center; margin-top: 5px;">
-        <img src="images/favcafe-icon2.png" alt="Fav Cafe" style="width: 32px; height: 26px; margin-right: 8px;">
+      <div style="display: flex; align-items: center; margin-top: 8px;">
+        <span style="
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #ffeb3b;
+          border: 1px solid #ffc107;
+          margin-right: 8px;
+        "></span>
         <span style="font-size: 10pt;">Favorite Cafes</span>
       </div>
     `;

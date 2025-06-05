@@ -121,28 +121,28 @@ body {
 
 /* Custom popup styles */
 .custom-popup .leaflet-popup-content-wrapper {
-    background-color: rgba(40, 40, 40, 0.95);
+    background-color: rgba(40, 40, 40, 1); /* Make fully opaque */
     color: var(--color-text);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 0;
-    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
 .custom-popup .leaflet-popup-content {
     margin: 0;
     padding: 0;
-    width: 280px !important;
+    width: 320px !important; /* Make popup wider */
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .custom-popup .leaflet-popup-tip {
-    background-color: rgba(40, 40, 40, 0.95);
+    background-color: rgba(40, 40, 40, 1); /* Make opaque */
 }
 
 .custom-popup .leaflet-popup-close-button {
     color: var(--color-accent);
-    font-size: 16px;
-    padding: 8px 8px 0 0;
+    font-size: 18px;
+    padding: 10px 10px 0 0;
 }
 
 .custom-popup .leaflet-popup-close-button:hover {
@@ -151,32 +151,36 @@ body {
 
 /* Popup container */
 .popup-container {
-    padding: 15px;
+    padding: 20px;
 }
 
 /* Restaurant name styling */
 .popup-name {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--color-accent);
-    margin-bottom: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    padding-bottom: 8px;
+    margin-bottom: 18px;
+    /* Remove border-bottom */
 }
 
 /* Field labels and values */
 .popup-label {
-    color: #aaaaaa;
-    font-size: 12px;
+    color: #888888;
+    font-size: 10px;
     font-weight: 500;
-    display: inline-block;
-    width: 65px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .popup-value {
     color: var(--color-text);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: capitalize;
 }
 
 /* Info rows styling */
@@ -203,7 +207,6 @@ body {
 }
 
 .website-btn:hover {
-    background-color: var(--color-text);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }

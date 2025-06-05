@@ -599,11 +599,11 @@ L.control.scale({
 function addLegend(map) {
   const legend = L.control({ position: 'bottomleft' });
 
-  // Update legend to use circles instead of icons
+  // Update legend to use circles instead of icons and remove border
   legend.onAdd = function () {
     const div = L.DomUtil.create('div', 'legend');
     div.innerHTML = `
-      <h4 style="margin: 0 0 10px 0; font-size: 14pt; color: ${COLORS.TEXT}; border-bottom: 1px solid ${COLORS.SECONDARY}; padding-bottom: 5px;">Legend</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 14pt; color: ${COLORS.TEXT};">Legend</h4>
       <div style="display: flex; align-items: center; margin-top: 8px;">
         <span style="
           display: inline-block;
@@ -611,22 +611,10 @@ function addLegend(map) {
           height: 16px;
           border-radius: 50%;
           background-color: ${COLORS.TEXT};
-          border: 1px solid ${COLORS.SECONDARY};
+          border: none;
           margin-right: 8px;
         "></span>
-        <span style="font-size: 11pt;">Cafes</span>
-      </div>
-      <div style="display: flex; align-items: center; margin-top: 8px; margin-bottom: 5px;">
-        <span style="
-          display: inline-block;
-          width: 16px;
-          height: 16px;
-          border-radius: 50%;
-          background-color: ${COLORS.ACCENT};
-          border: 1px solid ${COLORS.ACCENT};
-          margin-right: 8px;
-        "></span>
-        <span style="font-size: 11pt;">Favorite Cafes</span>
+        <span style="font-size: 11pt;">Restaurant</span>
       </div>
     `;
     return div;
@@ -639,11 +627,12 @@ addLegend(map);
 
 // Add the country selector control
 function addCountrySelector(map) {
-  const countrySelector = L.control({ position: 'topright' });
+  const countrySelector = L.control({ position: 'bottomleft' });
   
   countrySelector.onAdd = function() {
     const div = L.DomUtil.create('div', 'country-selector');
     div.innerHTML = `
+      <h4 style="margin: 0 0 10px 0; font-size: 14pt; color: ${COLORS.TEXT};">Region</h4>
       <div class="selector-container">
         <!-- Radio buttons will be dynamically added here -->
       </div>

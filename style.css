@@ -3,7 +3,7 @@
   --color-bg-dark: #0b0b0b;
   --color-main: #282828; /* Dark gray for main elements */
   --color-text: #ffffff; /* White text */
-  --color-accent: #8CFFDA; /* Teal accent color */
+  --color-accent: #8cf056; /* Teal accent color */
   --color-secondary: #555555; /* Secondary gray */
   --color-overlay: rgba(40, 40, 40, 0.8); /* Semi-transparent overlay */
 }
@@ -23,10 +23,9 @@ body{
     font-size: 44px;
     font-weight: 700;
     color: var(--color-accent);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     pointer-events: none; /* Allow clicking through the title */
     padding: 5px 10px;
-    background-color: rgba(11, 11, 11, 0.4);
+    background-color: transparent;
     border-radius: 6px;
     letter-spacing: 0.5px;
     opacity: 0;
@@ -279,22 +278,25 @@ body {
 /* Legend styling */
 .legend {
   font-family: 'Noto Sans KR', sans-serif !important;
-  background: var(--color-overlay) !important;
-  border-radius: 5px !important;
+  background: rgba(40, 40, 40, 1) !important; /* Fully opaque */
+  border-radius: 6px !important;
   margin-left: 15px !important; /* Align with zoom controls */
   margin-bottom: 15px !important; /* Position above zoom controls */
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5) !important;
   padding: 12px !important;
+  border: none !important; /* No outline */
 }
 
 /* Country selector styles */
 .country-selector {
-  background: rgba(40, 40, 40, 0.8);
+  background: rgba(40, 40, 40, 1); /* Fully opaque to match */
   border-radius: 6px;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #555555;
+  padding: 12px;
+  margin-left: 15px !important;
+  margin-bottom: 10px !important; /* Space between selector and legend */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  border: none; /* No outline */
+  font-family: 'Noto Sans KR', sans-serif !important;
 }
 
 .selector-container {
@@ -305,7 +307,7 @@ body {
 .country-option {
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: 2px 0;
   cursor: pointer;
   transition: all 0.2s ease;
   padding: 4px 0;
@@ -328,7 +330,7 @@ body {
 }
 
 .country-option input[type="radio"]:checked {
-  border-color: #8CFFDA;
+  border-color: var(--color-accent);
 }
 
 .country-option input[type="radio"]:checked::after {
@@ -339,11 +341,11 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #8CFFDA;
+  background-color: var(--color-accent);
 }
 
 .country-label {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 11pt; /* Match legend font size */
   font-weight: 500;
 }

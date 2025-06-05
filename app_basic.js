@@ -26,8 +26,7 @@ const favCafeCircleStyle = {
 };
 
 // Load the all-fav.geojson and favcafes.geojson files with circle markers
-loadGeoJSON('all-fav.geojson', cafeCircleStyle);
-loadGeoJSON('favcafes.geojson', favCafeCircleStyle);
+loadGeoJSON('export.geojson', cafeCircleStyle);
 
 // Function to handle popups for features
 function onEachFeature(feature, layer) {

@@ -1,0 +1,286 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-06-05T16:22:23Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1022272310",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "breakfast": "yes",
+        "contact:facebook": "https://www.facebook.com/treasureislandbeachclub",
+        "contact:phone": "+852 5236 7013",
+        "contact:website": "https://www.treasureislandhk.com/tig-restaurant/",
+        "contact:whatsapp": "+852 5236 7013",
+        "cuisine": "american;burger;fish_and_chips",
+        "cuisine:origin": "american",
+        "cuisine:origin:country": "US",
+        "demolished:name": "Mavericks",
+        "demolished:name:en": "Mavericks",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "drink:alcohol": "yes",
+        "ice_cream": "yes",
+        "name": "Treasure Island Beach Club",
+        "name:en": "Treasure Island Beach Club",
+        "opening_hours": "Fr 15:00-22:00, Sa 10:00-22:00; Su,PH 10:00-20:00",
+        "outdoor_seating": "yes",
+        "reservation": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9766309,
+          22.2399268
+        ]
+      },
+      "id": "node/1022272310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2192631868",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name": "Kung Tak Lam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.169895,
+          22.2959936
+        ]
+      },
+      "id": "node/2192631868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4269246092",
+        "addr:city": "Central",
+        "addr:country": "HK",
+        "addr:housenumber": "11",
+        "addr:street": "士丹利街 Stanley Street",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "email": "hello@veggiesf.com",
+        "level": "10",
+        "name": "VeggieSF",
+        "opening_hours": "Mo-Sa 12:00-14:30,18:00-21:00",
+        "phone": "+852 39023902",
+        "ref:openrice": "40435",
+        "website": "http://www.veggiesf.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15578,
+          22.28223
+        ]
+      },
+      "id": "node/4269246092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4367744290",
+        "addr:city": "尖沙咀 Tsim Sha Tsui",
+        "addr:housenumber": "9",
+        "addr:level": "1",
+        "addr:street": "樂道 Lock Road",
+        "amenity": "restaurant",
+        "contact:email": "brantohongkong@hotmail.com",
+        "contact:facebook": "https://www.facebook.com/Branto-Pure-Veg-Indian-Restaurant-HONG-KONG-196318713713111/",
+        "contact:instagram": "https://www.instagram.com/brantohk/",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "level": "1",
+        "name": "Branto 印度素食餐廳 Branto Indian Vegetarian Restaurant",
+        "name:en": "Branto Indian Vegetarian Restaurant",
+        "name:zh": "Branto 印度素食餐廳",
+        "opening_hours": "Mo-Su 11:00-15:00, 22:00-22:00",
+        "phone": "+852 23668171"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1714694,
+          22.2968694
+        ]
+      },
+      "id": "node/4367744290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5530394358",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Vegmind",
+        "website": "https://www.vegmind.hk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2241703,
+          22.2855572
+        ]
+      },
+      "id": "node/5530394358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5939049396",
+        "addr:housenumber": "108",
+        "addr:street": "荷李活道 Hollywood Road",
+        "amenity": "restaurant",
+        "craft": "caterer",
+        "diet:gluten_free": "yes",
+        "diet:raw": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name:en": "Grassroots Pantry",
+        "opening_hours": "Mo-Fr 09:00-15:00, 18:00-23:00; Sa-Su 11:30-15:00, 18:00-23:00",
+        "organic": "only",
+        "phone": "+852 2873 3353",
+        "reservation": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1510984,
+          22.2838016
+        ]
+      },
+      "id": "node/5939049396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6778574618",
+        "addr:housenumber": "62",
+        "addr:street": "麼地道 Mody Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "email": "reachus@vegconcepts.com",
+        "internet_access": "wlan",
+        "name": "Woodlands",
+        "opening_hours": "Mo-Su 11:30-15:30, 18:30-22:30",
+        "phone": "+852-23693718",
+        "website": "https://www.woodlandshk.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1762921,
+          22.2966633
+        ]
+      },
+      "id": "node/6778574618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9432444890",
+        "addr:housenumber": "83",
+        "addr:street": "大埔道 Tai Po Road",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/openblackwindow",
+        "contact:instagram": "https://www.instagram.com/blackwindow___/",
+        "delivery:ssprangers": "yes",
+        "delivery:ssprangers:ref": "https://ssprangers.com/menu/BlackWindow",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name": "黑窗里 black window",
+        "name:en": "black window",
+        "name:zh": "黑窗里",
+        "opening_hours": "12:30-22:00; We off",
+        "reusable_packaging:accept": "yes",
+        "reusable_packaging:offer": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1640008,
+          22.3323587
+        ]
+      },
+      "id": "node/9432444890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10185182583",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "diet:vegan": "yes",
+        "name": "Vegetarian Food",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.141989,
+          22.2870316
+        ]
+      },
+      "id": "node/10185182583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11372721669",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Mayse Pizzeria",
+        "opening_hours": "Mo-Su 12:00-21:00",
+        "phone": "+852 9535 2907"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1708381,
+          22.3082958
+        ]
+      },
+      "id": "node/11372721669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12003236490",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "青松觀餐廳 Ching Chung Koon Restaurant",
+        "name:yue-Hant": "青松觀餐廳",
+        "name:zh": "青松觀餐廳",
+        "name:zh-Hans": "青松观餐厅",
+        "name:zh-Hant": "青松觀餐廳",
+        "opening_hours": "Mo-Su 11:30-16:30",
+        "phone": "+852 24617117",
+        "website": "https://www.ccta.com.hk/005_religion_13.htm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9745244,
+          22.4060109
+        ]
+      },
+      "id": "node/12003236490"
+    }
+  ]
+}

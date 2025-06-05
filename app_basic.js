@@ -54,22 +54,163 @@ const favCafeCircleStyle = {
 // Create a variable to store the current GeoJSON layer
 let currentGeoJsonLayer = null;
 
-// Define the country data with file paths and map bounds
-const countryData = {
-  austria: {
-    file: 'austria.geojson',
-    title: 'Vegan friendly restaurants in Austria',
-    bounds: [[46.3723, 9.5307], [49.0205, 17.1608]] // SW and NE corners of Austria
-  },
-  japan: {
-    file: 'japan.geojson',
-    title: 'Vegan friendly restaurants in Japan',
-    bounds: [[30.9787, 129.4966], [45.5231, 145.8435]] // SW and NE corners of Japan
-  }
-};
+// Variable to store country/region data, will be populated dynamically
+let countryData = {};
 
-// Initial load of Austria data
-loadCountryData('austria');
+// Function to load available GeoJSON files and populate the countryData object
+function loadAvailableGeoJsonFiles() {
+  // Default country data with manually defined bounds
+  // This will be extended with any additional GeoJSON files found
+  const defaultBounds = {
+    'austria': [[46.3723, 9.5307], [49.0205, 17.1608]], // SW and NE corners of Austria
+    'japan': [[30.9787, 129.4966], [45.5231, 145.8435]] // SW and NE corners of Japan
+    // Add more default bounds for known regions as needed
+  };
+  
+  // Fetch the list of available GeoJSON files from the data directory
+  fetch('data/')
+    .then(response => response.text())
+    .then(html => {
+      // Parse the directory listing
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const links = Array.from(doc.querySelectorAll('a'));
+      
+      // Filter for GeoJSON files only
+      const geojsonLinks = links.filter(link => {
+        const href = link.getAttribute('href');
+        return href && href.endsWith('.geojson');
+      });
+      
+      // Process each GeoJSON file
+      geojsonLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        // Extract the region name from the filename (remove .geojson extension)
+        const region = href.replace('.geojson', '');
+        
+        // Create a title from the region name (capitalize first letter of each word)
+        const title = region
+          .split(/[-_]/)
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ');
+        
+        // Add the region to countryData, with the file path and title
+        countryData[region] = {
+          file: `data/${href}`,
+          title: `Vegan friendly restaurants in ${title}`,
+          bounds: defaultBounds[region] || null // Use default bounds if available
+        };
+      });
+      
+      // Alternative method: If no links were found, scan for filenames in the HTML
+      if (geojsonLinks.length === 0) {
+        // Try to find filenames directly in the text
+        const regex = /[a-z0-9_-]+\.geojson/gi;
+        const matches = html.match(regex) || [];
+        
+        matches.forEach(filename => {
+          const region = filename.replace('.geojson', '');
+          const title = region
+            .split(/[-_]/)
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+          
+          countryData[region] = {
+            file: `data/${filename}`,
+            title: `Vegan friendly restaurants in ${title}`,
+            bounds: defaultBounds[region] || null
+          };
+        });
+      }
+      
+      // If still no GeoJSON files were found, use the fallback data
+      if (Object.keys(countryData).length === 0) {
+        console.warn('No GeoJSON files found, using fallback data');
+        countryData = {
+          austria: {
+            file: 'data/austria.geojson',
+            title: 'Vegan friendly restaurants in Austria',
+            bounds: defaultBounds['austria']
+          },
+          japan: {
+            file: 'data/japan.geojson',
+            title: 'Vegan friendly restaurants in Japan',
+            bounds: defaultBounds['japan']
+          }
+        };
+      }
+      
+      // Update the country selector with the available regions
+      updateCountrySelector();
+      
+      // Load the first region by default
+      const firstRegion = Object.keys(countryData)[0];
+      loadCountryData(firstRegion);
+    })
+    .catch(error => {
+      console.error('Error loading GeoJSON file list:', error);
+      
+      // Fallback to static data in case of error
+      countryData = {
+        austria: {
+          file: 'data/austria.geojson',
+          title: 'Vegan friendly restaurants in Austria',
+          bounds: defaultBounds['austria']
+        },
+        japan: {
+          file: 'data/japan.geojson',
+          title: 'Vegan friendly restaurants in Japan',
+          bounds: defaultBounds['japan']
+        }
+      };
+      
+      // Update the country selector with the fallback data
+      updateCountrySelector();
+      
+      // Load Austria data by default
+      loadCountryData('austria');
+    });
+}
+
+// Function to update the country selector with the available regions
+function updateCountrySelector() {
+  const selectorContainer = document.querySelector('.selector-container');
+  if (!selectorContainer) return;
+  
+  // Clear the existing selector
+  selectorContainer.innerHTML = '';
+  
+  // Get all available regions from countryData
+  const regions = Object.keys(countryData);
+  
+  // Create a radio button for each region
+  regions.forEach((region, index) => {
+    // Format the region name for display (capitalize first letter of each word)
+    const displayName = region
+      .split(/[-_]/)
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+    
+    // Create the radio button element
+    const radioBtn = document.createElement('label');
+    radioBtn.className = 'country-option';
+    radioBtn.innerHTML = `
+      <input type="radio" name="country" value="${region}" ${index === 0 ? 'checked' : ''}>
+      <span class="country-label">${displayName}</span>
+    `;
+    
+    // Add event listener for radio button change
+    const input = radioBtn.querySelector('input');
+    input.addEventListener('change', function() {
+      if (this.checked) {
+        loadCountryData(this.value);
+      }
+    });
+    
+    // Add the radio button to the selector
+    selectorContainer.appendChild(radioBtn);
+  });
+}
 
 // Function to handle popups for features
 function onEachFeature(feature, layer) {
@@ -285,11 +426,81 @@ function loadCountryData(country) {
     map.removeLayer(currentGeoJsonLayer);
   }
   
-  // Fit map to the country bounds
-  map.fitBounds(countryData[country].bounds);
-  
-  // Load the GeoJSON for the selected country
-  loadGeoJSON(countryData[country].file, cafeCircleStyle);
+  // Check if we have predefined bounds for this country
+  if (countryData[country].bounds) {
+    // Use predefined bounds
+    map.fitBounds(countryData[country].bounds);
+    
+    // Load the GeoJSON for the selected country
+    loadGeoJSON(countryData[country].file, cafeCircleStyle);
+  } else {
+    // No predefined bounds, need to calculate them from the GeoJSON data
+    fetch(countryData[country].file)
+      .then(response => response.json())
+      .then(data => {
+        // Calculate bounds from the features in the GeoJSON
+        let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180;
+        
+        // Process each feature to find the bounding box
+        data.features.forEach(feature => {
+          if (!feature.geometry) return;
+          
+          // Handle different geometry types
+          if (feature.geometry.type === 'Point') {
+            const [lng, lat] = feature.geometry.coordinates;
+            minLat = Math.min(minLat, lat);
+            maxLat = Math.max(maxLat, lat);
+            minLng = Math.min(minLng, lng);
+            maxLng = Math.max(maxLng, lng);
+          } else if (feature.geometry.type === 'Polygon') {
+            feature.geometry.coordinates[0].forEach(coord => {
+              const [lng, lat] = coord;
+              minLat = Math.min(minLat, lat);
+              maxLat = Math.max(maxLat, lat);
+              minLng = Math.min(minLng, lng);
+              maxLng = Math.max(maxLng, lng);
+            });
+          } else if (feature.geometry.type === 'MultiPolygon') {
+            feature.geometry.coordinates.forEach(polygon => {
+              polygon[0].forEach(coord => {
+                const [lng, lat] = coord;
+                minLat = Math.min(minLat, lat);
+                maxLat = Math.max(maxLat, lat);
+                minLng = Math.min(minLng, lng);
+                maxLng = Math.max(maxLng, lng);
+              });
+            });
+          }
+        });
+        
+        // Store the calculated bounds for future use
+        countryData[country].bounds = [
+          [minLat, minLng], // SW corner
+          [maxLat, maxLng]  // NE corner
+        ];
+        
+        // Add some padding around the bounds (10%)
+        const latPadding = (maxLat - minLat) * 0.1;
+        const lngPadding = (maxLng - minLng) * 0.1;
+        const paddedBounds = [
+          [minLat - latPadding, minLng - lngPadding],
+          [maxLat + latPadding, maxLng + lngPadding]
+        ];
+        
+        // Fit map to the calculated bounds
+        map.fitBounds(paddedBounds);
+        
+        // Load the GeoJSON data
+        loadGeoJSON(countryData[country].file, cafeCircleStyle);
+      })
+      .catch(error => {
+        console.error(`Error loading GeoJSON for ${country}:`, error);
+        
+        // Fallback to a default view if bounds calculation fails
+        map.setView([0, 0], 2);
+        loadGeoJSON(countryData[country].file, cafeCircleStyle);
+      });
+  }
 }
 
 // Function to load and display GeoJSON data using circle markers
@@ -434,29 +645,12 @@ function addCountrySelector(map) {
     const div = L.DomUtil.create('div', 'country-selector');
     div.innerHTML = `
       <div class="selector-container">
-        <label class="country-option">
-          <input type="radio" name="country" value="austria" checked>
-          <span class="country-label">Austria</span>
-        </label>
-        <label class="country-option">
-          <input type="radio" name="country" value="japan">
-          <span class="country-label">Japan</span>
-        </label>
+        <!-- Radio buttons will be dynamically added here -->
       </div>
     `;
     
     // Prevent click events from propagating to the map
     L.DomEvent.disableClickPropagation(div);
-    
-    // Add event listeners to the radio buttons
-    const radioButtons = div.querySelectorAll('input[type="radio"]');
-    radioButtons.forEach(radio => {
-      radio.addEventListener('change', function() {
-        if (this.checked) {
-          loadCountryData(this.value);
-        }
-      });
-    });
     
     return div;
   };
@@ -467,7 +661,13 @@ function addCountrySelector(map) {
 // Add the country selector
 addCountrySelector(map);
 
+// Load available GeoJSON files and initialize the map
+loadAvailableGeoJsonFiles();
+
 // Trigger map resize when the window resizes
 window.addEventListener('resize', function () {
   map.invalidateSize();
 });
+
+// Load available GeoJSON files and populate the country data
+loadAvailableGeoJsonFiles();

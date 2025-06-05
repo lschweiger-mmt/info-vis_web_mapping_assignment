@@ -1,0 +1,4073 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-06-05T16:01:27Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/149147797",
+        "addr:block_number": "3-3",
+        "addr:city": "中央区",
+        "addr:neighbourhood": "1",
+        "addr:postcode": "104-0061",
+        "addr:province": "東京都",
+        "addr:quarter": "銀座",
+        "addr:suburb": "中央区",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "mexican",
+        "diet:vegan": "yes",
+        "name": "ETHICA",
+        "phone": "+81 3-6228-7313",
+        "source": "Bing,2007;survey;local knowledge;aerial imagery;osm notes;streetlevel imagery",
+        "website": "https://www.tablecheck.com/ja/shops/ethica/reserve"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.7663969,
+              35.6754227
+            ],
+            [
+              139.7663231,
+              35.6754444
+            ],
+            [
+              139.7662626,
+              35.675315
+            ],
+            [
+              139.7663292,
+              35.6752707
+            ],
+            [
+              139.7663969,
+              35.6754227
+            ]
+          ]
+        ]
+      },
+      "id": "way/149147797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/428493467",
+        "amenity": "restaurant",
+        "brand": "ガスト",
+        "brand:en": "Gusto",
+        "brand:ja": "ガスト",
+        "brand:wikidata": "Q87724117",
+        "building": "commercial",
+        "cuisine": "western;japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "ガスト",
+        "name:en": "Gusto",
+        "name:ja": "ガスト",
+        "opening_hours": "Mo-Sa 10:00-00:00; Su,PH 07:00-00:00",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "source": "bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.6116492,
+              36.7505296
+            ],
+            [
+              139.6115467,
+              36.7503392
+            ],
+            [
+              139.6117154,
+              36.7502809
+            ],
+            [
+              139.6118179,
+              36.7504713
+            ],
+            [
+              139.6116492,
+              36.7505296
+            ]
+          ]
+        ]
+      },
+      "id": "way/428493467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/447338048",
+        "amenity": "restaurant",
+        "building": "yes",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "name": "biotable",
+        "source": "local knowledge",
+        "website": "http://biotable.jp/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.7483609,
+              35.6416897
+            ],
+            [
+              139.7483032,
+              35.6415864
+            ],
+            [
+              139.7484441,
+              35.6415357
+            ],
+            [
+              139.7484965,
+              35.6416403
+            ],
+            [
+              139.7483609,
+              35.6416897
+            ]
+          ]
+        ]
+      },
+      "id": "way/447338048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1158193687",
+        "addr:block_number": "24",
+        "addr:city": "船橋市",
+        "addr:housenumber": "21",
+        "addr:neighbourhood": "3",
+        "addr:postcode": "2730865",
+        "addr:province": "千葉",
+        "addr:quarter": "夏見",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "japanese",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Vegan cafe Hanauta ベジカフェ ハナウタ",
+        "phone": "0474248442",
+        "website": "https://vegecafe-hanauta.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.9869687,
+              35.7155059
+            ],
+            [
+              139.9870468,
+              35.7154699
+            ],
+            [
+              139.9871051,
+              35.7155781
+            ],
+            [
+              139.9870193,
+              35.7156092
+            ],
+            [
+              139.9869687,
+              35.7155059
+            ]
+          ]
+        ]
+      },
+      "id": "way/1158193687"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1174641596",
+        "amenity": "restaurant",
+        "branch": "新百合ヶ丘店",
+        "cuisine": "sushi",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "くら寿司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5096616,
+          35.6016177
+        ]
+      },
+      "id": "node/1174641596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1966302960",
+        "addr:block_number": "2",
+        "addr:city": "港区",
+        "addr:housenumber": "13",
+        "addr:neighbourhood": "南青山6丁目",
+        "addr:province": "東京都",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "レヴアリー",
+        "name:en": "Revuari",
+        "name:es": "Revuari",
+        "name:ja_rm": "Revuarī",
+        "opening_hours": "Su 08:00-20:30",
+        "phone": "+81 3 3498 0866"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7150162,
+          35.6611188
+        ]
+      },
+      "id": "node/1966302960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2108042546",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "layer": "-1",
+        "level": "-1",
+        "name": "ナタラジ (Nataraj)",
+        "source": "image,2013-01;Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6214465,
+          35.7038692
+        ]
+      },
+      "id": "node/2108042546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2724689539",
+        "alt_name": "こまきしょくどう -かまくらふしきあん",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "int_name": "Komaki cafeteria - Kamakura Fushikian",
+        "name": "こまきしょくどう -鎌倉不識庵",
+        "phone": "+81 3-5577-5358",
+        "website": "https://konnichiha.net/fushikian/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7732107,
+          35.6996416
+        ]
+      },
+      "id": "node/2724689539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3290125333",
+        "addr:city": "大阪市中央区北久宝寺町４-２-２　久宝ビル１F",
+        "addr:postcode": "541-0057",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "contact:facebook": "100063480552490",
+        "contact:instagram": "green_earth.vegan",
+        "contact:phone": "+81 6-6251-1245",
+        "contact:website": "http://osaka-vegetarian-ge.com",
+        "cuisine": "coffee_shop;pasta;pizza",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "image:menu": "145f43f3-1fa7-4cba-a522-20e7910e6cdc",
+        "image:menu:0": "3d950ac8-45d5-4edf-bdc1-51b0d370bec5",
+        "image:menu:1": "7f866279-dc82-4274-97a0-0027f6dda68b",
+        "image:menu:2": "9ac6146d-aa80-46ee-8528-aa57ea1c2828",
+        "image:menu:3": "1322862f-232f-4b78-8ac1-020a62936d28",
+        "image:menu:4": "48ee8c68-f4ec-45f0-9fa4-e82119a2511c",
+        "image:menu:5": "5aff05e1-5c72-4425-9557-5edc5040a331",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "グリーンアース",
+        "name:en": "GreenEarth",
+        "name:ja_kana": "ぐりーんあーす",
+        "opening_hours": "Mo-Th 11:30-17:00; Fr 11:30-15:00, 18:00-22:30; Sa 11:30-17:00",
+        "outdoor_seating": "yes",
+        "panoramax": "31b47fd2-81d9-48dc-ae40-f91e9788b046",
+        "smoking": "separated",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4992172,
+          34.679763
+        ]
+      },
+      "id": "node/3290125333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3446415095",
+        "addr:city": "Kyoto",
+        "addr:housenumber": "372",
+        "addr:postcode": "605-0084",
+        "addr:street": "Kiyomotocho",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "check_date": "2023-10-04",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "祇園たんと",
+        "name:en": "Gion Tanto",
+        "outdoor_seating": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "075-525-6100",
+        "website": "http://gion-tanto.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7745738,
+          35.0055299
+        ]
+      },
+      "id": "node/3446415095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3686569625",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "contact:instagram": "rawfoodlohas",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "level": "0",
+        "level:ref": "1F",
+        "name": "Natural Raw Food LOHAS",
+        "opening_hours": "PH-1,Fr,Sa 11:00-16:00,18:00-23:30; Su-Th 11:00-18:00",
+        "organic": "only",
+        "outdoor_seating": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 011-222-5569",
+        "smoking": "no",
+        "takeaway": "no",
+        "website": "https://rawfoodlohas.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.346836,
+          43.056566
+        ]
+      },
+      "id": "node/3686569625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3692911384",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "diet:vegan": "yes",
+        "name": "Eastside",
+        "name:en": "Eastside Cafe",
+        "name:ja": "イーストサイド・カフェ",
+        "name:ja_rm": "Īsutosaido kafe",
+        "website": "https://www.tokyodisneyresort.jp/en/tdl/restaurant/detail/300/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8801459,
+          35.6345587
+        ]
+      },
+      "id": "node/3692911384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3694786843",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "diet:vegan": "yes",
+        "name": "リストランテ・ディ・カナレット",
+        "name:en": "Ristorante di Canaletto",
+        "name:es": "Ristorante di Canaletto",
+        "name:ja": "リストランテ・ディ・カナレット"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8878616,
+          35.6257091
+        ]
+      },
+      "id": "node/3694786843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4050378123",
+        "amenity": "restaurant",
+        "check_date": "2024-03-01",
+        "cuisine": "coffee_shop;japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "name": "Curry & Cafe 香炉里（こるり）",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "toilets": "yes",
+        "wikimedia_commons": "File:Store front of Curry & Cafe.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8337376,
+          34.6764174
+        ]
+      },
+      "id": "node/4050378123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4261956089",
+        "amenity": "restaurant",
+        "contact:phone": "+81 87-892-3830",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "fixme": "どこの建物に属するのか不明確",
+        "internet_access": "wlan",
+        "name": "玄米心食あいすなお",
+        "name:en": "Aisunao",
+        "name:ja": "玄米心食あいすなお",
+        "opening_hours": "Mo-Su 11:00-17:30",
+        "short_name": "あいすなお",
+        "website": "http://aisunao.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.9963489,
+          34.4604328
+        ]
+      },
+      "id": "node/4261956089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4264122379",
+        "addr:postcode": "616-0000",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "篩月",
+        "name:en": "Shigetsu",
+        "opening_hours": "Mo-Su 11:00-14:00",
+        "phone": "+81-758829725",
+        "source": "survey",
+        "website": "https://www.tenryuji.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.6736022,
+          35.0151336
+        ]
+      },
+      "id": "node/4264122379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4383197689",
+        "addr:housenumber": "1-4-25",
+        "addr:street": "kamiyacyo",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name": "Kissasaeki",
+        "name:en": "Organic cafe & kitchen",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "phone": "+81 82-246-9339"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.4586034,
+          34.3943753
+        ]
+      },
+      "id": "node/4383197689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4398451697",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Kinatei",
+        "opening_hours": "Mo-Sa 11:30-14:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8207906,
+          34.6777032
+        ]
+      },
+      "id": "node/4398451697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4409233590",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Vegecafe+α",
+        "name:en": "Vegecafe+α"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.495486,
+          34.7286455
+        ]
+      },
+      "id": "node/4409233590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4411208589",
+        "addr:street": "Japan, 〒606-8205 Kyoto Prefecture, Kyoto, 左京区田中上柳町15ｰ2",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name": "ファラフェルガーデン",
+        "name:en": "Falafel Garden",
+        "name:ja": "ファラフェルガーデン",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "power_supply": "yes",
+        "toilets:access": "wlan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7735054,
+          35.0315831
+        ]
+      },
+      "id": "node/4411208589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4535075891",
+        "addr:postcode": "102-0000",
+        "amenity": "restaurant",
+        "cuisine": "asian;japanese",
+        "diet:vegan": "yes",
+        "name": "こまきしょくどう",
+        "name:en": "Komaki Shokudo",
+        "name:ja": "こまきしょくどう",
+        "name:ko": "코마키쇼쿠도",
+        "opening_hours": "Mo-Fr 11:00-16:00, 17:00-19:30; Sa-Su 11:00-19:30",
+        "outdoor_seating": "yes",
+        "website": "https://www.kamakura-komaki.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.773215,
+          35.6996146
+        ]
+      },
+      "id": "node/4535075891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4535079989",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:halal": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "level": "-1",
+        "lunch": "yes",
+        "name": "ヴェジハーブサーガ",
+        "name:en": "Vege Herb Saga",
+        "name:ja": "ヴェジハーブサーガ",
+        "opening_hours": "11:15-15:00, 17:15-23:00",
+        "phone": "+81 358184154"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.775318,
+          35.7059997
+        ]
+      },
+      "id": "node/4535079989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4542178692",
+        "addr:street": "4-12-1 Ginza, Chuo-ku, Tokyo, Japan",
+        "amenity": "restaurant",
+        "cuisine": "international;japanese;french",
+        "diet:vegan": "yes",
+        "name:en": "Ain Soph.Ginza",
+        "opening_hours": "Mo-Su 11:30-22:00",
+        "phone": "+81 3-6228-4241",
+        "website": "https://www.ain-soph.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7679696,
+          35.6701952
+        ]
+      },
+      "id": "node/4542178692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4550856991",
+        "addr:full": "三条通;京都府道37号二条停車場東山三条線",
+        "addr:housenumber": "89-1",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "Organic Cafe Choice",
+        "name:en": "Choice Cafe and Restaurant",
+        "opening_hours": "Mo, Th-Su 09:30-11:00, 11:00-15:00, 17:00-20:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7738037,
+          35.009379
+        ]
+      },
+      "id": "node/4550856991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4559935689",
+        "addr:block_number": "8",
+        "addr:city": "新宿区",
+        "addr:housenumber": "9",
+        "addr:neighbourhood": "新宿3丁目",
+        "addr:province": "東京都",
+        "amenity": "restaurant",
+        "cuisine": "burger;international;japanese",
+        "diet:vegan": "yes",
+        "name": "アインソフ ジャーニー",
+        "name:en": "AIN SOPH. journey",
+        "phone": "+81-3-5925-8908"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7067299,
+          35.6906017
+        ]
+      },
+      "id": "node/4559935689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4623697390",
+        "amenity": "restaurant",
+        "contact:instagram": "stardust_kana",
+        "diet:vegan": "yes",
+        "name": "Stardust",
+        "name:ja": "stardust",
+        "opening_hours": "Fr-Tu 11:00-18:00",
+        "website": "http://www.stardustkyoto.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.748759,
+          35.0523224
+        ]
+      },
+      "id": "node/4623697390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780279221",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "Ukishima Garden (Vegetarian & Vegan)",
+        "opening_hours": "Mo-Su 11:30-15:00, 18:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.6863995,
+          26.2140444
+        ]
+      },
+      "id": "node/4780279221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780279223",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Rice Beat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.7396788,
+          26.2643128
+        ]
+      },
+      "id": "node/4780279223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780279227",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "dechibica デチビカ",
+        "opening_hours": "Mo-Su 11:00-17:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.7469466,
+          26.368492
+        ]
+      },
+      "id": "node/4780279227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780291221",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "スプラウト",
+        "name:en": "Sprout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.7496217,
+          26.263333
+        ]
+      },
+      "id": "node/4780291221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780307523",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "自然食とおやつmana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.6899141,
+          26.2128182
+        ]
+      },
+      "id": "node/4780307523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780307721",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Detox Cafe Felicidad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.6687813,
+          26.1384343
+        ]
+      },
+      "id": "node/4780307721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780313521",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Niffera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.6926377,
+          26.2139472
+        ]
+      },
+      "id": "node/4780313521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4833610422",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Bakery & Cafe Coo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.9262001,
+          26.7014781
+        ]
+      },
+      "id": "node/4833610422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4848672235",
+        "amenity": "restaurant",
+        "diet:vegan": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7166211,
+          35.7295859
+        ]
+      },
+      "id": "node/4848672235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4848673722",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "Soar Ain Soph",
+        "name:en": "Soar in to the Sky",
+        "name:ja": "Soar Ain Soph",
+        "phone": "+81 3-5944-9699",
+        "website": "https://www.ain-soph.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7170533,
+          35.7314899
+        ]
+      },
+      "id": "node/4848673722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4854456221",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Comida",
+        "opening_hours": "Tu-Sa 11:30-17:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8872027,
+          36.5628831
+        ]
+      },
+      "id": "node/4854456221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4863724721",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "japanese;tofu",
+        "description": "Yudofu restaurant, traditional tatami seating",
+        "diet:healthy": "yes",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "喜さ起",
+        "name:en": "Kisaki",
+        "name:ja": "喜さ起",
+        "phone": "075-751-7406",
+        "website": "https://kisaki.owst.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7968069,
+          35.0238636
+        ]
+      },
+      "id": "node/4863724721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4863753422",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "level": "1",
+        "name:en": "Saffron Ikebukuro",
+        "opening_hours": "Mo-Su 11:30-15:00, 17:30-22:00",
+        "phone": "+81 359525676"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7165641,
+          35.7294571
+        ]
+      },
+      "id": "node/4863753422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4873762721",
+        "amenity": "restaurant",
+        "check_date": "2024-02-26",
+        "cuisine": "asian;japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "風堂 金沢",
+        "name:en": "Ippudo Kanazawa",
+        "opening_hours": "Mo-Su 11:00-03:00",
+        "website": "https://ippudo.com/",
+        "wikimedia_commons": "File:Ippudo_Kanazawa.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.654736,
+          36.5608192
+        ]
+      },
+      "id": "node/4873762721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4913545325",
+        "amenity": "restaurant",
+        "cuisine": "italian;mediterranean",
+        "diet:vegan": "yes",
+        "name:en": "Restaurant 8ablish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7107268,
+          35.6627005
+        ]
+      },
+      "id": "node/4913545325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4913545327",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name": "小鉢や",
+        "name:en": "Kobachi-ya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7349384,
+          35.6710716
+        ]
+      },
+      "id": "node/4913545327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4913570321",
+        "addr:street": "Toshima-ku, Higasi Ikebukuro 3-5-7, Tokyo, Japan",
+        "amenity": "restaurant",
+        "cuisine": "french;international;japanese",
+        "diet:vegan": "yes",
+        "name:en": "Ain Soph.Soar",
+        "phone": "+81 3 5944 9699",
+        "website": "https://www.ain-soph.jp/soar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7170548,
+          35.7314106
+        ]
+      },
+      "id": "node/4913570321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4913570323",
+        "amenity": "restaurant",
+        "cuisine": "japanese;asian",
+        "diet:vegan": "yes",
+        "name": "Kaemon Asakusa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7986385,
+          35.7126687
+        ]
+      },
+      "id": "node/4913570323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4913664022",
+        "amenity": "restaurant",
+        "cuisine": "international;japanese",
+        "diet:vegan": "yes",
+        "name": "Pole pole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.665974,
+          35.6674185
+        ]
+      },
+      "id": "node/4913664022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5017248159",
+        "amenity": "restaurant",
+        "contact:website": "https://indoshama.jimdofree.com/",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "level": "-1",
+        "name": "菜食インドレストランShama",
+        "opening_hours": "Mo-Su 11:00-15:00,17:00-22:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4964273,
+          34.6726921
+        ]
+      },
+      "id": "node/5017248159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5020322523",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Izusen",
+        "name:fr": "Isuzen",
+        "opening_hours": "Th-Tu 11:00-17:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7474404,
+          35.0419032
+        ]
+      },
+      "id": "node/5020322523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5020327022",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Izusen",
+        "name:fr": "Isuzen",
+        "opening_hours": "Mo-Su 11:00-16:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7448194,
+          35.0417204
+        ]
+      },
+      "id": "node/5020327022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5155172537",
+        "addr:housenumber": "6-19",
+        "addr:street": "Hanasatomachi",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2022-10-09",
+        "cuisine": "tex-mex;burger",
+        "diet:local": "yes",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "Eviltex@gmail.com",
+        "level": "1",
+        "microbrewery": "no",
+        "name": "EVILTEX",
+        "opening_hours": "Mo,We-Sa 11:30-22:00; Tu off; Su,PH 11:00-21:00",
+        "outdoor_seating": "yes",
+        "payment:PayPay": "yes",
+        "payment:cash": "yes",
+        "payment:line_pay": "yes",
+        "phone": "+81 57-7575-888",
+        "reservation": "no",
+        "smoking": "no",
+        "website": "https://www.eviltex13.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.2524431,
+          36.1425719
+        ]
+      },
+      "id": "node/5155172537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5158186321",
+        "alt_name": "活美登利",
+        "alt_name:en": "Katsu Midori;Mawashizushi Katsu",
+        "amenity": "restaurant",
+        "branch": "西武渋谷店",
+        "branch:en": "Seibushibuya",
+        "cuisine": "sushi",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "7",
+        "level:ref": "8F",
+        "name": "回し寿司活",
+        "name:en": "Mawashizushi Katsu (Katsu Midori)",
+        "name:ja": "回し寿司活",
+        "old_name:en": "Sushi Katsumidori",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "website": "https://katumidori.co.jp/shop/?id=seibushibuya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7004319,
+          35.660276
+        ]
+      },
+      "id": "node/5158186321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5198084128",
+        "addr:city": "金沢市",
+        "addr:postcode": "920-0865",
+        "addr:province": "石川県",
+        "amenity": "restaurant",
+        "check_date": "2024-11-17",
+        "cuisine": "indian;nepalese",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "language:en": "yes",
+        "language:ja": "yes",
+        "name": "アシルワード",
+        "name:en": "Aashirwad",
+        "name:ja": "アシルワード",
+        "name:ja-Hira": "あしるわーど",
+        "name:ja-Latn": "Ashiruwādo",
+        "payment:PayPay": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 76 262 2170",
+        "website": "https://m.facebook.com/aashirwad.kanazawa/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6523697,
+          36.5643982
+        ]
+      },
+      "id": "node/5198084128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5285016826",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "Cafe ABSINTHE",
+        "name:en": "Cafe Absinthe",
+        "name:ja": "カフェ アブサン",
+        "website": "https://www.absinthe-jp.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4971716,
+          34.6733791
+        ]
+      },
+      "id": "node/5285016826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5374925421",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "internet_access": "wlan",
+        "name": "Private Lodge Cafe & Diner (Vegan / Vegetarian)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.7120956,
+          32.8083087
+        ]
+      },
+      "id": "node/5374925421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5408866048",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "串カツ田中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6368277,
+          35.6501214
+        ]
+      },
+      "id": "node/5408866048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5450917612",
+        "amenity": "restaurant",
+        "cuisine": "mediteranian",
+        "description": "Farm to table",
+        "diet:vegan": "yes",
+        "level": "0",
+        "name": "Terra",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+81115123547",
+        "website": "https://www.tripadvisor.com/Restaurant_Review-d5894958"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3569343,
+          43.0493409
+        ]
+      },
+      "id": "node/5450917612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5469157521",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name:en": "Base Island Kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4952863,
+          34.6740145
+        ]
+      },
+      "id": "node/5469157521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5503018721",
+        "amenity": "restaurant",
+        "cuisine": "local;japanese",
+        "diet:vegan": "yes",
+        "name": "magokoro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5381409,
+          35.3103244
+        ]
+      },
+      "id": "node/5503018721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5510473490",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "2bananeira. ドイス バナネイラ",
+        "opening_hours": "Mo-We 11:00-22:00; Th 11:00-15:30; Fr-Sa 11:00-22:00",
+        "phone": "+81 45-482-7871"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5258714,
+          35.5477396
+        ]
+      },
+      "id": "node/5510473490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5694272317",
+        "addr:housenumber": "田辺市本宮町本宮452-1",
+        "addr:postcode": "647-1731",
+        "addr:street": "国道168号線",
+        "amenity": "restaurant",
+        "cuisine": "local;japanese;friture;chicken",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name": "くまのこ食堂",
+        "name:en": "kumanoco restaurant",
+        "opening_hours": "Mo-Su 11:00-15:00, 17:00-22:00",
+        "phone": "+81 735-30-0878",
+        "website": "https://kumano.co/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7725432,
+          33.8344239
+        ]
+      },
+      "id": "node/5694272317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5711112222",
+        "amenity": "restaurant",
+        "contact:instagram": "vegan_ramen_towzen",
+        "diet:vegan": "yes",
+        "name": "Vegan Ramen Towzen",
+        "name:en": "TowZen or Mamezen Vegetarian Ramen",
+        "opening_hours": "Fr-We 11:30-14:30, 18:00-21:30",
+        "website": "https://www.mamezen.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7760543,
+          35.0436214
+        ]
+      },
+      "id": "node/5711112222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5855915003",
+        "addr:postcode": "616-0000",
+        "amenity": "restaurant",
+        "contact:facebook": "LITTLEHEAVEN55",
+        "diet:vegan": "yes",
+        "name": "Little Heaven"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.6987739,
+          35.0145576
+        ]
+      },
+      "id": "node/5855915003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5874416286",
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "name": "ソラノイロNIPPON",
+        "name:en": "Soranoiro Nippon",
+        "opening_hours": "09:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7680776,
+          35.6804881
+        ]
+      },
+      "id": "node/5874416286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5879805485",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Soranoiro",
+        "opening_hours": "Mo-Su 11:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8852394,
+          35.1698809
+        ]
+      },
+      "id": "node/5879805485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6070420721",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "神宮茶処あじゃり"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4277287,
+          34.8249753
+        ]
+      },
+      "id": "node/6070420721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6222238027",
+        "addr:city": "横浜市",
+        "addr:housenumber": "106",
+        "addr:postcode": "2310023",
+        "addr:province": "神奈川県",
+        "addr:quarter": "山下町",
+        "addr:street": "南門通り",
+        "amenity": "restaurant",
+        "cuisine": "taiwanese",
+        "diet:vegan": "yes",
+        "name": "好記園",
+        "name:en": "Koukien",
+        "name:ja_kana": "こうきえん",
+        "name:ja_rm": "Koukien",
+        "opening_hours": "Mo-Fr 11:00-15:00, 17:00-22:00; Sa-Su 11:00-22:00",
+        "phone": "+81 456418868"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6481606,
+          35.441794
+        ]
+      },
+      "id": "node/6222238027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6239135090",
+        "amenity": "restaurant",
+        "branch": "Iidabashi",
+        "diet:vegan": "yes",
+        "level": "1",
+        "name": "Royal Garden Cafe",
+        "opening_hours": "11:00-23:00",
+        "outdoor_seating": "yes",
+        "toilets": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.743629,
+          35.6990497
+        ]
+      },
+      "id": "node/6239135090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6251224085",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name:en": "Milan Nataraj",
+        "opening_hours": "Mo-Su 11:30-23:00",
+        "website": "https://nataraj.co.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7009468,
+          35.6611333
+        ]
+      },
+      "id": "node/6251224085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6261477357",
+        "amenity": "restaurant",
+        "cuisine": "curry",
+        "diet:vegan": "yes",
+        "name": "COCOMO",
+        "official_name": "Vegetable Kitchen COCOMO",
+        "phone": "+81 3-6304-9441"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6602752,
+          35.6974998
+        ]
+      },
+      "id": "node/6261477357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6298203385",
+        "addr:housenumber": "3-2-19",
+        "addr:street": "中目黒",
+        "amenity": "restaurant",
+        "cuisine": "sandwich",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "email": "ballon170630@gmail.com",
+        "name": "Ballon",
+        "opening_hours": "Mo-Su 11:00-18:00",
+        "phone": "+81 3-3712-0087",
+        "website": "https://www.ballontokyo.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6998347,
+          35.6414337
+        ]
+      },
+      "id": "node/6298203385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6442096588",
+        "addr:housenumber": "278",
+        "addr:street": "烏丸通",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Kanga An",
+        "opening_hours": "Mo-Su 12:00-15:00, 17:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7620334,
+          35.038425
+        ]
+      },
+      "id": "node/6442096588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6442108285",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Hobodo Cafe",
+        "opening_hours": "We-Mo 10:00-18:00; Tu 10:00-15:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7765925,
+          35.0118968
+        ]
+      },
+      "id": "node/6442108285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6450896907",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "name": "KHANA 花菜",
+        "phone": "+81 3-5306-1626"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6489592,
+          35.704538
+        ]
+      },
+      "id": "node/6450896907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6465889685",
+        "addr:housenumber": "294-1",
+        "addr:street": "五条通",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Kitten Company Cafe",
+        "opening_hours": "Mo-Fr 11:30-19:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7589563,
+          34.9959343
+        ]
+      },
+      "id": "node/6465889685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6465889686",
+        "addr:housenumber": "448",
+        "addr:street": "七条通",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Veg Out",
+        "opening_hours": "Tu-Su 08:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7667313,
+          34.989439
+        ]
+      },
+      "id": "node/6465889686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6467256746",
+        "addr:neighbourhood": "1-4-20",
+        "addr:quarter": "Kugenumakaigan",
+        "amenity": "restaurant",
+        "cuisine": "japanese;local",
+        "diet:vegan": "yes",
+        "name": "CHIKYU",
+        "website": "https://chikyu-farm.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4725499,
+          35.3184028
+        ]
+      },
+      "id": "node/6467256746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6514995885",
+        "amenity": "restaurant",
+        "check_date": "2024-03-03",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "level": "1",
+        "name:en": "Gluten Free T's",
+        "opening_hours": "Mo,We-Su 12:00-16:00,17:00-22:00; Tu off",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 368747719",
+        "website": "https://glutenfree.co.jp/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7297233,
+          35.6650583
+        ]
+      },
+      "id": "node/6514995885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6633213190",
+        "amenity": "restaurant",
+        "cuisine": "deli;asian;indian",
+        "diet:vegan": "yes",
+        "indoor_seating": "yes",
+        "name:de": "Namaste Kathmandu",
+        "name:en": "Namaste Kathmandu",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "outdoor_seating": "no",
+        "phone": "+81 422-21-7010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5761622,
+          35.7039184
+        ]
+      },
+      "id": "node/6633213190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6681521384",
+        "addr:block_number": "13",
+        "addr:city": "渋谷区",
+        "addr:housenumber": "21",
+        "addr:neighbourhood": "1",
+        "addr:postcode": "1500001",
+        "addr:province": "東京都",
+        "addr:quarter": "神宮前",
+        "amenity": "restaurant",
+        "branch": "原宿",
+        "branch:en": "Harajuku",
+        "check_date": "2023-08-30",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "name": "九州じゃんがら",
+        "name:en": "Kyushu Jangara Ramen",
+        "website": "https://kyushujangara.co.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7034621,
+          35.6696057
+        ]
+      },
+      "id": "node/6681521384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6774370487",
+        "addr:block_number": "7",
+        "addr:city": "墨田区",
+        "addr:housenumber": "10",
+        "addr:neighbourhood": "4",
+        "addr:postcode": "130-0012",
+        "addr:province": "東京都",
+        "addr:quarter": "太平",
+        "amenity": "restaurant",
+        "cuisine": "taiwanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name": "ベジハウス",
+        "name:en": "Veggie House",
+        "phone": "+81-336251245"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8162514,
+          35.7014292
+        ]
+      },
+      "id": "node/6774370487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6856564007",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "diet:vegan": "yes",
+        "name": "線條手打餃子専門店",
+        "name:en": "Senjo Ruyi Gyoza",
+        "opening_hours": "Mo-Sa 11:00-22:00; Su 13:00-22:00",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7079492,
+          35.7341358
+        ]
+      },
+      "id": "node/6856564007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6907907176",
+        "amenity": "restaurant",
+        "cuisine": "ramen;japanese",
+        "diet:vegan": "yes",
+        "name": "新宿御苑らーめん桜花",
+        "name:en": "Shinjukugyoen Ramen Ouka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.713159,
+          35.6887159
+        ]
+      },
+      "id": "node/6907907176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7011021585",
+        "addr:block_number": "3",
+        "addr:city": "福岡市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "博多リバレインモール1F",
+        "addr:province": "福岡県",
+        "addr:quarter": "下川端町",
+        "addr:suburb": "博多区",
+        "amenity": "restaurant",
+        "branch": "リバレイン本店",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "マクロビオティックカフェ  エヴァダイニング ボタニカルガーデン",
+        "name:en": "Evah Dining Macrobiotic",
+        "name:ja": "マクロビオティックカフェ　エヴァダイニング ボタニカルガーデン",
+        "opening_hours": "Mo-Su 10:30-19:30",
+        "phone": "+81922732262",
+        "website": "https://evahdining.com/shops/riverain/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.4056188,
+          33.5950301
+        ]
+      },
+      "id": "node/7011021585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7021761192",
+        "addr:block_number": "２−３７",
+        "addr:housenumber": "2F",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "いっちゃんekie広島駅店",
+        "name:en": "Icchan Okonomiyaki",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "phone": "+81 82-261-0680"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.4761326,
+          34.3976971
+        ]
+      },
+      "id": "node/7021761192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7030888585",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "Nature"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4980293,
+          34.6783778
+        ]
+      },
+      "id": "node/7030888585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7090358186",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "name": "Taj Mahal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.641989,
+          42.8410853
+        ]
+      },
+      "id": "node/7090358186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7116179586",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Queen's Healthy Diner",
+        "opening_hours": "Tu-Su 17:00-00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9104081,
+          35.1671378
+        ]
+      },
+      "id": "node/7116179586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7116180085",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Itadakizen Colline de Tara",
+        "opening_hours": "Tu-Sa 12:00-15:00, 18:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9260284,
+          35.1669982
+        ]
+      },
+      "id": "node/7116180085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7178906885",
+        "amenity": "restaurant",
+        "cuisine": "burger;international",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name:en": "Hakuba Brew Pub",
+        "opening_hours": "Mo-Su 16:00-10:30",
+        "phone": "+81261852414",
+        "website": "https://hakubabrewpub.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8572237,
+          36.7151086
+        ]
+      },
+      "id": "node/7178906885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7844910168",
+        "addr:city": "千代田区",
+        "addr:housenumber": "11",
+        "addr:postcode": "101-0036",
+        "addr:province": "東京都",
+        "addr:quarter": "神田北乗物町",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "サスティナブルキッチンROSY",
+        "name:en": "Sustainable Kitchen Rosy",
+        "name:ja_kana": "サスティナブルキッチンロージー",
+        "short_name": "キッチンROSY",
+        "short_name:en": "Kitchen Rosy",
+        "website": "http://kitchenrosy.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.773311,
+          35.6920241
+        ]
+      },
+      "id": "node/7844910168"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7878041186",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "菜道",
+        "name:en": "Saido Vegan Restaurant",
+        "website": "https://saido.tokyo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6662148,
+          35.6077943
+        ]
+      },
+      "id": "node/7878041186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7882396091",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "オルガン",
+        "name:en": "Organ",
+        "phone": "+81 22 796 8259",
+        "website": "http://life-thyme-plus.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7435754,
+          38.219541
+        ]
+      },
+      "id": "node/7882396091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8090717907",
+        "amenity": "restaurant",
+        "cuisine": "soup",
+        "diet:vegan": "yes",
+        "name": "Soup Stock Tokyo",
+        "name:ja_kana": "スープストックトーキョー"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6502764,
+          35.6689772
+        ]
+      },
+      "id": "node/8090717907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8097456167",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "diet:vegan": "yes",
+        "name": "Soieil Hibiya Okuroji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7588628,
+          35.6699798
+        ]
+      },
+      "id": "node/8097456167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8141923309",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "diet:vegan": "yes",
+        "name": "ティッチャイ",
+        "name:en": "Titchai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667003,
+          35.6583054
+        ]
+      },
+      "id": "node/8141923309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8631874799",
+        "amenity": "restaurant",
+        "cuisine": "sri_lankan",
+        "diet:vegan": "yes",
+        "name": "Sri Lanka Kagoshima"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.553809,
+          31.5916406
+        ]
+      },
+      "id": "node/8631874799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9215633976",
+        "amenity": "restaurant",
+        "contact:phone": "090-7940-5188",
+        "cuisine": "shabu-shabu;sukiyaki;hot_pot",
+        "diet:vegan": "yes",
+        "name": "Japanese Hot Pot Dining 円 Malu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2896197,
+          36.8547762
+        ]
+      },
+      "id": "node/9215633976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9687093060",
+        "addr:block_number": "203",
+        "addr:city": "糸島市",
+        "addr:neighbourhood": "田中",
+        "addr:postcode": "819-1615",
+        "addr:province": "福岡県",
+        "addr:quarter": "二丈",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/hirunecosyokudou",
+        "cuisine": "coffee_shop;burger;pizza;italian",
+        "diet:alcohol_free": "yes",
+        "diet:vegan": "yes",
+        "name": "喫茶ひるねこ",
+        "name:en": "Cafe Hiruneko",
+        "opening_hours:covid19": "Sa-Mo 12:30-18:00; We-Th 12:30-18:00",
+        "payment:cash": "yes",
+        "phone": "+81 92-334-3690",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.1668224,
+          33.534329
+        ]
+      },
+      "id": "node/9687093060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10269991515",
+        "addr:city": "台東区",
+        "addr:floor": "3 - ecute ueno",
+        "addr:full": "〒110-0005 東京都台東区上野７丁目１−1 JR 上野駅改札内 ecute上野（3階）内",
+        "addr:postcode": "110-0005",
+        "addr:province": "東京都",
+        "addr:quarter": "上野",
+        "addr:suburb": "台東区",
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "name:en": "T's TanTan Ecute Ueno",
+        "name:ja": "T's たんたん",
+        "note": "Access only past ticket gates",
+        "note:ja": "アクセスは改札を抜けたところのみ。",
+        "opening_hours": "Mo-Fr 10:00-22:00; Sa-Su 10:00-21:00",
+        "phone": "+81358265618",
+        "website": "http://ts-restaurant.jp/tantan/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7772405,
+          35.7141781
+        ]
+      },
+      "id": "node/10269991515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10291420809",
+        "amenity": "restaurant",
+        "branch:en": "Ikebukuro Station",
+        "cuisine": "japanese;ramen",
+        "diet:vegan": "yes",
+        "name": "T's たんたん 池袋",
+        "name:en": "T‘s Tantan",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "phone": "03-5958-0375",
+        "self_service": "partially",
+        "website": "https://foods.jr-cross.co.jp/ts-tantan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7105409,
+          35.7300146
+        ]
+      },
+      "id": "node/10291420809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10291421009",
+        "amenity": "restaurant",
+        "cuisine": "ramen;ice_cream",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "no",
+        "name": "Vegan Ramen UZU Tokyo",
+        "name:en": "Vegan Ramen UZU Tokyo",
+        "name:ja": "ヴィーガンラーメン ウズ トウキョウ",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website": "https://vegan-uzu.com/pages/uzu-tokyo",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7902478,
+          35.6491306
+        ]
+      },
+      "id": "node/10291421009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10292662025",
+        "amenity": "restaurant",
+        "check_date": "2024-02-28",
+        "diet:vegan": "yes",
+        "name": "とおりゃんせ",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7949389,
+          35.015371
+        ]
+      },
+      "id": "node/10292662025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10613428495",
+        "amenity": "restaurant",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "name": "Natural Food Dining Lohas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3468819,
+          43.0565476
+        ]
+      },
+      "id": "node/10613428495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10690258977",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "floor": "2",
+        "food": "yes",
+        "name": "vegefirst",
+        "opening_hours": "Mo-We, Fr-Su 11:00-14:45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9014941,
+          35.1768784
+        ]
+      },
+      "id": "node/10690258977"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10760437908",
+        "amenity": "restaurant",
+        "contact:instagram": "vegginykyoto",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name:en": "Vegginy",
+        "opening_hours": "Sa-Su 12:00-14:30, 17:30-19:00; Mo-Tu, Fr 12:00-15:00",
+        "phone": "+81 75-746-4222"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7660398,
+          35.0120778
+        ]
+      },
+      "id": "node/10760437908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10839451005",
+        "amenity": "restaurant",
+        "check_date": "2024-02-25",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "level": "1",
+        "name:en": "Oko Takoyaki"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5041986,
+          34.6736192
+        ]
+      },
+      "id": "node/10839451005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10857710337",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "level": "6",
+        "name": "bills",
+        "outdoor_seating:comfort": "cushion_chair"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4951916,
+          34.7027054
+        ]
+      },
+      "id": "node/10857710337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10892586576",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "Love For All",
+        "payment:account_cards": "no",
+        "payment:alipay": "no",
+        "payment:american_express": "no",
+        "payment:app": "no",
+        "payment:apple_pay": "no",
+        "payment:bancomat": "no",
+        "payment:blik": "no",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:clipper": "no",
+        "payment:coins": "yes",
+        "payment:contactless": "no",
+        "payment:credit_cards": "no",
+        "payment:cryptocurrencies": "no",
+        "payment:debit_cards": "no",
+        "payment:diners_club": "no",
+        "payment:discover_card": "no",
+        "payment:dkv": "no",
+        "payment:electronic_purses": "no",
+        "payment:ep_easycard": "no",
+        "payment:ep_geldkarte": "no",
+        "payment:notes": "no",
+        "payment:prepaid_ticket": "no",
+        "payment:telephone_cards": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6535391,
+          36.5646239
+        ]
+      },
+      "id": "node/10892586576"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10951142722",
+        "alt_name": "M's Cafe",
+        "amenity": "restaurant",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:captive_portal": "yes",
+        "internet_access:operator": "usen",
+        "level": "0;1",
+        "name": "麻心",
+        "name:ja": "麻心",
+        "name:ja-Kana": "まごころ",
+        "name:ja-Latn": "Magokoro",
+        "opening_hours": "Mo-We,Fr-Su 12:00-21:00; Th off",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.8192306,
+          34.1880005
+        ]
+      },
+      "id": "node/10951142722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11007698853",
+        "amenity": "restaurant",
+        "contact:instagram": "whybowl_osaka",
+        "diet:vegan": "yes",
+        "level": "0",
+        "name": "WHY BOWL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5095587,
+          34.7071579
+        ]
+      },
+      "id": "node/11007698853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11228376715",
+        "amenity": "restaurant",
+        "contact:instagram": "mitsukabose.official",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "level": "1",
+        "name": "みつか坊主",
+        "opening_hours": "We-Sa 11:30-00:00; Su 11:30-22:00",
+        "website": "https://mitsukabose.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4495718,
+          34.7952368
+        ]
+      },
+      "id": "node/11228376715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11247555670",
+        "addr:city": "Takayama",
+        "addr:housenumber": "35",
+        "addr:neighbourhood": "Kamisannomachi",
+        "addr:province": "Gifu",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "とうふ料理のぐちや",
+        "name:en": "Tofu Cuisine Noguchiya",
+        "opening_hours": "Th-Tu 10:00-15:00",
+        "phone": "+81-577-33-7563"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.2593099,
+          36.1419875
+        ]
+      },
+      "id": "node/11247555670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11607194970",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "ヴィーガン餃子",
+        "name:en": "Vegan Gyoza Yu",
+        "name:fr": "Vegan Gyoza Yu",
+        "website": "https://www.vegangyoza.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7796848,
+          35.7243553
+        ]
+      },
+      "id": "node/11607194970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11662344088",
+        "amenity": "restaurant",
+        "check_date": "2024-02-25",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Aduka",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8431383,
+          36.7013805
+        ]
+      },
+      "id": "node/11662344088"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11676440184",
+        "amenity": "restaurant",
+        "check_date": "2024-03-01",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name": "Kyoto Engine Ramen",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wikimedia_commons": "File:Kyoto Engine Ramen.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7678711,
+          35.0043833
+        ]
+      },
+      "id": "node/11676440184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11684583354",
+        "amenity": "restaurant",
+        "check_date": "2024-03-02",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "name:en": "Rakkan Ramen",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6687148,
+          35.6613401
+        ]
+      },
+      "id": "node/11684583354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11687432553",
+        "amenity": "restaurant",
+        "brand": "一風堂",
+        "brand:en": "Ippudo",
+        "brand:ja": "一風堂",
+        "brand:wikidata": "Q6065417",
+        "brand:zh": "一風堂",
+        "check_date": "2024-03-03",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "一風堂",
+        "name:en": "Ippudo",
+        "name:ja": "一風堂",
+        "name:zh": "一風堂",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7641966,
+          35.6750674
+        ]
+      },
+      "id": "node/11687432553"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11765668838",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "level": "3",
+        "name": "Whitely",
+        "opening_hours": "Mo-Su 10:00-18:30",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7619039,
+          35.0049158
+        ]
+      },
+      "id": "node/11765668838"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11772811560",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Guruatsu",
+        "payment:cash": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7813855,
+          35.7149447
+        ]
+      },
+      "id": "node/11772811560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11799031369",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name": "りうぜん"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.3410519,
+          36.0654233
+        ]
+      },
+      "id": "node/11799031369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11801994006",
+        "addr:block_number": "13",
+        "addr:city": "宜野湾市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "二丁目",
+        "addr:postcode": "901-2214",
+        "addr:province": "沖縄県",
+        "addr:quarter": "我如古",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "NATURAL TONE",
+        "opening_hours": "Sa-Su 11:00-15:00",
+        "phone": "098-898-7543",
+        "website": "https://naturaltone-okinawa.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.7620938,
+          26.2532164
+        ]
+      },
+      "id": "node/11801994006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11801994051",
+        "addr:block_number": "17",
+        "addr:city": "北谷町",
+        "addr:county": "中頭郡",
+        "addr:housenumber": "9",
+        "addr:neighbourhood": "一丁目",
+        "addr:postcode": "904-0117",
+        "addr:province": "沖縄県",
+        "addr:quarter": "北前",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Indira",
+        "opening_hours": "Th-Tu 9:00-15:00; 17:00-22:00",
+        "phone": "098-989-3555",
+        "website": "https://www.indiraokinawa.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.7584877,
+          26.299096
+        ]
+      },
+      "id": "node/11801994051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11832164883",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "T’s Vegan Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6682138,
+          35.6090483
+        ]
+      },
+      "id": "node/11832164883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11927876970",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "鑑真食堂",
+        "name:en": "Ganjin Shokudo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.7090888,
+          32.8016961
+        ]
+      },
+      "id": "node/11927876970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11934680369",
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "AoBaBa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.4594183,
+          34.3898541
+        ]
+      },
+      "id": "node/11934680369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11947606371",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name:en": "Champagne & Gyoza Bar STAND-CHAM-SHOKU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4969539,
+          34.6976796
+        ]
+      },
+      "id": "node/11947606371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11949590743",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "CBD GREEN",
+        "opening_hours": "11:30-20:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.9205862,
+          34.6652085
+        ]
+      },
+      "id": "node/11949590743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11951720869",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "Kyoto Engine Ramen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7675691,
+          35.004478
+        ]
+      },
+      "id": "node/11951720869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11966245269",
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "Fuku Noki"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3429937,
+          43.054071
+        ]
+      },
+      "id": "node/11966245269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11968734469",
+        "amenity": "restaurant",
+        "cuisine": "curry",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "Curry Shop S"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3528095,
+          43.0563911
+        ]
+      },
+      "id": "node/11968734469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11974369581",
+        "addr:city": "横浜市",
+        "addr:housenumber": "106",
+        "addr:postcode": "231-0023",
+        "addr:province": "神奈川県",
+        "addr:quarter": "山下町",
+        "addr:suburb": "中区",
+        "amenity": "restaurant",
+        "cuisine": "taiwanese;chinese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "好記園",
+        "name:en": "Koukien",
+        "opening_hours": "Mo-Su 11:00-14:30, 17:00-20:30, Closed Thu",
+        "phone": "+81 050-7586-8538",
+        "website": "http://www.y-navi.jp/store/koukien/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6481329,
+          35.4418957
+        ]
+      },
+      "id": "node/11974369581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11980655369",
+        "amenity": "restaurant",
+        "cuisine": "curry;japanese",
+        "diet:vegan": "yes",
+        "name:en": "Ygeia",
+        "opening_hours": "Th-Tu 12:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3619659,
+          43.7700332
+        ]
+      },
+      "id": "node/11980655369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11980735969",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "WHIZ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3620985,
+          43.7699888
+        ]
+      },
+      "id": "node/11980735969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11984375233",
+        "amenity": "restaurant",
+        "contact:instagram": "naya.tkg",
+        "contact:phone": "+81 87-802-3944",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "0",
+        "name": "Farm to kitchen 納屋",
+        "opening_hours": "Th-Su 11:00-17:00; Mo-We off",
+        "website": "https://www.farm-to-kitchen-naya.com/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.0447716,
+          34.3324051
+        ]
+      },
+      "id": "node/11984375233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11989806669",
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "Box Burger"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.1015787,
+          35.2300821
+        ]
+      },
+      "id": "node/11989806669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11999980069",
+        "amenity": "restaurant",
+        "cuisine": "breakfast;japanese;pancake",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "ポキボウルクラブトウキョウ",
+        "name:en": "POKE BOWL CLUB TOKYO",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7830687,
+          35.6924565
+        ]
+      },
+      "id": "node/11999980069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12000415013",
+        "amenity": "restaurant",
+        "check_date": "2024-02-28",
+        "contact:instagram": "nijiya.kyoto",
+        "diet:vegan": "yes",
+        "name": "虹屋",
+        "name:en": "Nijiya Vegan Izakaya",
+        "name:ja_rm": "Nijiya",
+        "opening_hours": "17:30-20:30",
+        "outdoor_seating": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "090-8502-9013",
+        "website": "https://nijiya-produced-by-vegan-farm.jimdosite.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7701993,
+          35.0065831
+        ]
+      },
+      "id": "node/12000415013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12000471769",
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "name:en": "Tokyo Vegan Ramen Center // Sri Lankan curry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7114191,
+          35.6671281
+        ]
+      },
+      "id": "node/12000471769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12022851900",
+        "amenity": "restaurant",
+        "check_date": "2024-06-19",
+        "diet:organic": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Kito",
+        "name:ja": "季と",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9098088,
+          35.1252067
+        ]
+      },
+      "id": "node/12022851900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12037059690",
+        "amenity": "restaurant",
+        "cuisine": "mexican;asian;pasta",
+        "diet:vegan": "yes",
+        "name": "ルーツカフェ",
+        "name:en": "Roots Cafe Hakuba",
+        "phone": "0261850034"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8333461,
+          36.7057647
+        ]
+      },
+      "id": "node/12037059690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12137672701",
+        "addr:housenumber": "6-16 2F",
+        "addr:postcode": "9800811",
+        "amenity": "restaurant",
+        "contact:instagram": "vegeto.liko",
+        "diet:vegan": "yes",
+        "name": "Vegeto LIKO",
+        "opening_hours": "Th-Mo 11:00-17:00",
+        "outdoor_seating": "no",
+        "website": "https://vegetoliko.stores.jp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.871575,
+          38.2582874
+        ]
+      },
+      "id": "node/12137672701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148026601",
+        "amenity": "restaurant",
+        "contact:instagram": "tucasa_zerowaste",
+        "cuisine": "korean",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name": "TU CASA - Zero waste & Plant based トゥ・カサ",
+        "opening_hours": "Mo-Su 17:00-20:00",
+        "phone": "+81-7054381488"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7690585,
+          34.996484
+        ]
+      },
+      "id": "node/12148026601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148026603",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "Cafe Ren - Kamigyo",
+        "opening_hours": "Mo-Su 11:00-19:00",
+        "phone": "+81-753848112",
+        "website": "https://cafe-ren.therestaurant.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7515795,
+          35.022363
+        ]
+      },
+      "id": "node/12148026603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148026701",
+        "amenity": "restaurant",
+        "contact:instagram": "zirael_vegan_restaurant",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name": "Zirael Vegan Restaurant",
+        "opening_hours": "Mo-Su 12:00-19:00",
+        "phone": "+81-5058734845",
+        "website": "https://ziraelinc.wixsite.com/zirael-restaurant/ja"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.777991,
+          35.005078
+        ]
+      },
+      "id": "node/12148026701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148026702",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "Cafe Ren - Sakyo",
+        "opening_hours": "Mo-Su 07:30-19:00",
+        "phone": "+81-9081477815",
+        "website": "https://cafe-ren.therestaurant.jp/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.787468,
+          35.028599
+        ]
+      },
+      "id": "node/12148026702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148026801",
+        "amenity": "restaurant",
+        "contact:instagram": "unoyukiko.ramen",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "name": "Uno Yukiko - Gion Soy Milk Ramen",
+        "opening_hours": "Mo-Su 11:00-20:30",
+        "website": "https://en.soymilkramen.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.772713,
+          35.002418
+        ]
+      },
+      "id": "node/12148026801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148026901",
+        "amenity": "restaurant",
+        "contact:facebook": "Natural-food-Village-637246029741585",
+        "diet:vegan": "yes",
+        "name:en": "Natural Food Village",
+        "opening_hours": "Mo-Su 12:00-15:00, 18:00-23:55",
+        "phone": "+81-757123372",
+        "website": "https://ameblo.jp/naturalfoodvillage/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.791505,
+          35.039271
+        ]
+      },
+      "id": "node/12148026901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148026902",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Hozoin Terasoba",
+        "opening_hours": "Th-Sa 11:00-14:00",
+        "website": "https://www.hozoin.net/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8047794,
+          34.914828
+        ]
+      },
+      "id": "node/12148026902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148027001",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Ryoanji Yudofu - Seigenin",
+        "opening_hours": "Fr-Tu 11:00-15:00",
+        "website": "http://www.ryoanji.jp/smph/index.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.71909,
+          35.03418
+        ]
+      },
+      "id": "node/12148027001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148027002",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Haku Un An",
+        "opening_hours": "Fr-We 11:00-16:00",
+        "website": "https://www.hakuunan.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.804888,
+          34.913763
+        ]
+      },
+      "id": "node/12148027002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148027201",
+        "amenity": "restaurant",
+        "contact:instagram": "vegan_uzu",
+        "diet:vegan": "yes",
+        "name:en": "Vegan Ramen UZU",
+        "opening_hours": "Tu-Fr 12:00-13:30, 17:00-20:30",
+        "website": "https://vegan-uzu.com/pages/uzu-kyoto-en"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.768121,
+          35.014663
+        ]
+      },
+      "id": "node/12148027201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12148027301",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Bouko",
+        "website": "https://syukubo.jp/ryouri/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.842999,
+          35.070892
+        ]
+      },
+      "id": "node/12148027301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12154646001",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name": "il riccio",
+        "opening_hours": "Tu-Su 11:30-18:30",
+        "outdoor_seating": "no",
+        "website": "https://il-riccio.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.6932103,
+          34.8308202
+        ]
+      },
+      "id": "node/12154646001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12156946701",
+        "alt_name": "Saishoku Ryouri F Effe",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "菜食料理 F エッフェ",
+        "name:en": "Plant-based cuisine F Effe",
+        "name:fr": "Cuisine végétale F Effe",
+        "name:ja_rm": "Saishoku Ryōri F Effe",
+        "opening_hours": "We-Su 11:30-14:30, 18:00-21:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.naturale-f.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7585778,
+          34.9950065
+        ]
+      },
+      "id": "node/12156946701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12158729001",
+        "amenity": "restaurant",
+        "cuisine": "ramen;sushi",
+        "diet:vegan": "yes",
+        "name": "Vegan Ramen UZU Kyoto",
+        "opening_hours": "Mo-Fr 12:00-14:30, 17:00-21:00",
+        "outdoor_seating": "no",
+        "website": "https://vegan-uzu.com/pages/uzu-kyoto-en"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7680418,
+          35.0146676
+        ]
+      },
+      "id": "node/12158729001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12162726101",
+        "addr:postcode": "605-0803",
+        "alt_name": "Uno Yukiko Gion Tounyu Ramen",
+        "amenity": "restaurant",
+        "cuisine": "cake;japanese;ramen",
+        "diet:vegan": "yes",
+        "name": "うのゆきこ　ぎをん豆乳らーめん",
+        "name:en": "Uno Yukiko Gion soymilk Ramen",
+        "name:fr": "Uno Yukiko Ramen au lait de soja de Gion",
+        "name:ja_rm": "Uno Yukiko Gion Tōnyū Rāmen",
+        "opening_hours": "Mo-Su 11:00-20:30",
+        "outdoor_seating": "no",
+        "phone": "+81 (0)75 551 3954",
+        "website": "https://soymilkramen.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.772687,
+          35.0024133
+        ]
+      },
+      "id": "node/12162726101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12329961503",
+        "addr:postcode": "553-0003",
+        "amenity": "restaurant",
+        "contact:instagram": "folksaka",
+        "cuisine": "cake;coffee_shop;sandwich",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Folk茶菓",
+        "name:en": "Folksaka",
+        "opening_hours": "Fr-Tu 10:00-19:00",
+        "self_service": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4881816,
+          34.6952202
+        ]
+      },
+      "id": "node/12329961503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12366318201",
+        "addr:block_number": "21",
+        "addr:city": "千代田区",
+        "addr:neighbourhood": "神田錦町3丁目",
+        "addr:postcode": "101-0054",
+        "addr:province": "東京都",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "しまゆし",
+        "name:en": "Shimayushi",
+        "opening_hours": "09:30-22:00",
+        "phone": "+81-3-5259-8051",
+        "website": "https://shimyushi.com",
+        "website:menu": "https://shimyushi.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7619161,
+          35.6913772
+        ]
+      },
+      "id": "node/12366318201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12518570601",
+        "addr:full": "東京都中央区銀座８-10-8 銀座8丁目10番ビルB1F",
+        "amenity": "restaurant",
+        "capacity": "50",
+        "cuisine": "indian",
+        "delivery": "yes",
+        "diet:halal": "yes",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "dog": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "-1",
+        "name": "アナム　本格インド料理　銀座店",
+        "name:en": "Anam Authentic Indian Cuisine Ginza Branch",
+        "name:ja": "アナム　本格インド料理　銀座店",
+        "opening_hours": "Mo-Su 11:00-03:00",
+        "opening_hours:kitchen": "Mo-Su 11:00-02:00",
+        "payment:au_pay": "yes",
+        "payment:jcb": "yes",
+        "payment:mastercard": "yes",
+        "payment:paypay": "yes",
+        "payment:visa": "yes",
+        "phone": "03-6280-6708",
+        "reservation": "yes",
+        "reservation:website": "https://hotpepper.jp/strJ001177934/yoyaku/hpds",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://annam-indian-restaurannt.owsr.jp",
+        "website:en": "https://annam-indian-restaurannt.owst.jp/en"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.762034,
+          35.6674705
+        ]
+      },
+      "id": "node/12518570601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12536168201",
+        "addr:full": "〒101-0041 東京都千代田区神田須田町２丁目８−１９",
+        "amenity": "restaurant",
+        "cocktails": "yes",
+        "contact:facebook": "omefarm",
+        "contact:instagram": "omefarmkitchen",
+        "contact:retty": "https://retty.me/area/PRE13/ARE11/SUB1102/100001723126",
+        "contact:tablelog": "https://tabelog.com/en/tokyo/A1310/A131002/13281227",
+        "cuisine": "salad;vegetables;health_food",
+        "description": "オメファームキッチンは、東京の神田エリアにある居心地の良いレストランで、オメファームで育てられた有機野菜を使った美味しく健康的な料理を提供しています。種からテーブルまでの哲学を重視し、ヴィーガンやベジタリアン向けのオプションに焦点を当てたメニューには、ブッダボウルや季節の特製料理などの革新的な料理があり、すべて新鮮さ、風味、そして美しい盛り付けで高く評価されています。",
+        "description:en": "Ome Farm Kitchen in Akihabara, Tokyo, serves dishes made with organic vegetables grown in Tokyo, using a farm-to-table approach. Focusing on vegan/vegitarian, the menu changes with the farm's harvest, offering a unique and delicious experience.",
+        "description:ja": "オメファームキッチンは、東京の神田エリアにある居心地の良いレストランで、オメファームで育てられた有機野菜を使った美味しく健康的な料理を提供しています。種からテーブルまでの哲学を重視し、ヴィーガンやベジタリアン向けのオプションに焦点を当てたメニューには、ブッダボウルや季節の特製料理などの革新的な料理があり、すべて新鮮さ、風味、そして美しい盛り付けで高く評価されています。",
+        "diet:local": "yes",
+        "diet:natural_foods": "yes",
+        "diet:organic": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "drink:beer": "yes",
+        "drink:wine": "yes",
+        "email": "kitchenomefarm@gmail.com",
+        "food:buddha_bowl": "yes",
+        "food:curry": "yes",
+        "food:dessert": "yes",
+        "food:hummus": "yes",
+        "food:salad": "yes",
+        "food:seasonal": "yes",
+        "food:soup": "yes",
+        "food:tacos": "yes",
+        "food:tofu": "yes",
+        "food:vegetables": "yes",
+        "food:vichyssoise": "yes",
+        "level": "1",
+        "name": "Ome Farm Kitchen",
+        "opening_hours": "Mo-Sa 11:30-15:30, 18:00-21:00",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:nfc": "yes",
+        "payment:rakuten_pay": "yes",
+        "phone": "+81-80-9386-2914",
+        "website": "https://omefarm.jp/#kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7738775,
+          35.695265
+        ]
+      },
+      "id": "node/12536168201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12537497642",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name": "Sannaisaryo Taikobo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6018471,
+          36.7554181
+        ]
+      },
+      "id": "node/12537497642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12548372788",
+        "amenity": "restaurant",
+        "cuisine": "curry",
+        "diet:vegan": "yes",
+        "instagram": "anjinmoko",
+        "level": "2",
+        "name": "あんじんもこ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.6613843,
+          26.1952484
+        ]
+      },
+      "id": "node/12548372788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12570681672",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "language:en": "main",
+        "language:ja": "yes",
+        "level": "1",
+        "name": "MORE OR LESS",
+        "opening_hours": "Tu-Su 11:00-17:00; Mo off",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.4600401,
+          34.3925187
+        ]
+      },
+      "id": "node/12570681672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12682706687",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Vegetarian Beast",
+        "panoramax": "e9a7b9c0-5c33-4f20-92b8-ff16db4f37b7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7069671,
+          35.7225429
+        ]
+      },
+      "id": "node/12682706687"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12738752401",
+        "amenity": "restaurant",
+        "cuisine": "curry;indian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Peg",
+        "opening_hours": "Fr-Sa 18:00-23:00; Su 12:00-15:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4761646,
+          34.6917262
+        ]
+      },
+      "id": "node/12738752401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12738818501",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name:en": "Okonomiyaki ChinChiKuRin",
+        "opening_hours": "Mo-Su 11:00-19:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.305591,
+          34.3115304
+        ]
+      },
+      "id": "node/12738818501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12741627001",
+        "amenity": "restaurant",
+        "cuisine": "coffee_shop;korean;tea",
+        "diet:vegan": "yes",
+        "name:en": "bee9 vegan cafe & studio",
+        "opening_hours": "Mo-Fr 11:00-17:00; Sa-Su 18:00-23:00",
+        "website:menu": "https://xs878786.xsrv.jp/digital-menu-site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5154591,
+          34.6983904
+        ]
+      },
+      "id": "node/12741627001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12752121003",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name:en": "Genshisoba",
+        "opening_hours": "Fr-We 11:00-14:30, 17:15-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4994208,
+          34.6654778
+        ]
+      },
+      "id": "node/12752121003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12752158102",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "name": "海鮮もんじゃ海老蔵",
+        "name:en": "Kaisen Monjya Ebizo",
+        "opening_hours": "Mo-Th 17:30-00:00; Fr-Su 11:00-00:00",
+        "phone": "+81 6-6633-5402",
+        "website": "http://www.genjisoba.co.jp/",
+        "website:menu": "https://r.gnavi.co.jp/jk40rxv00000/menu1/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4982159,
+          34.6661333
+        ]
+      },
+      "id": "node/12752158102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12799595001",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "養美",
+        "name:en": "Youbisha",
+        "opening_hours": "We-Su 10:00-16:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6693486,
+          40.6067551
+        ]
+      },
+      "id": "node/12799595001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12827620965",
+        "addr:floor": "2",
+        "amenity": "restaurant",
+        "check_date": "2025-05-11",
+        "cuisine": "african",
+        "diet:meat": "yes",
+        "diet:rice": "yes",
+        "diet:vegan": "yes",
+        "level": "1",
+        "name": "PANAF",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.3838701,
+          34.6522437
+        ]
+      },
+      "id": "node/12827620965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12832847801",
+        "addr:street": "本通り",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "JoGeSaYu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.4564155,
+          34.3925028
+        ]
+      },
+      "id": "node/12832847801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12856824821",
+        "addr:block_number": "6-14",
+        "addr:city": "大阪市",
+        "addr:housenumber": "906号",
+        "addr:neighbourhood": "東中島一丁目",
+        "addr:postcode": "533-0033",
+        "addr:province": "大阪府",
+        "addr:suburb": "東淀川区",
+        "amenity": "restaurant",
+        "cuisine": "chicken",
+        "diet:vegan": "yes",
+        "name": "（株）総合オリコミ社 大阪支店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5033069,
+          34.7284437
+        ]
+      },
+      "id": "node/12856824821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12872426347",
+        "addr:block_number": "4",
+        "addr:city": "那覇市",
+        "addr:housenumber": "10",
+        "addr:neighbourhood": "3",
+        "addr:postcode": "900-0015",
+        "addr:province": "沖縄県",
+        "addr:quarter": "久茂地",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "リューネス（ゆかるひ店）",
+        "phone": "090-7586-5880"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.6829385,
+          26.2148975
+        ]
+      },
+      "id": "node/12872426347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12872439909",
+        "addr:block_number": "15",
+        "addr:city": "沖縄市",
+        "addr:housenumber": "101",
+        "addr:neighbourhood": "15",
+        "addr:postcode": "904-0014",
+        "addr:province": "沖縄県",
+        "addr:quarter": "仲宗根",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "キッチンのぎ",
+        "opening_hours": "Mo, We-Sa 11:30-15:00,17:00-21:00",
+        "phone": "098-989-8258",
+        "website": "https://kitchennogi.com/index.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.8041789,
+          26.3347175
+        ]
+      },
+      "id": "node/12872439909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12872439918",
+        "addr:block_number": "2",
+        "addr:city": "北谷町",
+        "addr:county": "中頭郡",
+        "addr:housenumber": "123",
+        "addr:postcode": "904-0113",
+        "addr:province": "沖縄県",
+        "addr:quarter": "宮城",
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "ラーメン暖暮北谷砂辺店",
+        "opening_hours": "Mo-Su 11:00-24:00",
+        "phone": "098-960-7494",
+        "website": "https://ramendanbo.okinawa/about-us/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.7450031,
+          26.3305679
+        ]
+      },
+      "id": "node/12872439918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12875622368",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "VEGGY STYLE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5330794,
+          35.3511674
+        ]
+      },
+      "id": "node/12875622368"
+    }
+  ]
+}

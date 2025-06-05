@@ -28,6 +28,11 @@ const mapTitle = L.DomUtil.create('div', 'map-title');
 mapTitle.innerHTML = 'Vegan friendly restaurants in Austria';
 document.body.appendChild(mapTitle);
 
+// Add fade-in animation for the title
+setTimeout(() => {
+  mapTitle.style.opacity = '1';
+}, 500);
+
 const cafeCircleStyle = {
   radius: 8,
   fillColor: COLORS.TEXT,
@@ -345,15 +350,8 @@ function addLegend(map) {
   // Update legend to use circles instead of icons
   legend.onAdd = function () {
     const div = L.DomUtil.create('div', 'legend');
-    div.style.background = 'rgba(40, 40, 40, 0.8)';
-    div.style.padding = '10px';
-    div.style.borderRadius = '5px';
-    div.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
-    div.style.fontFamily = "'Noto Sans KR', sans-serif";
-    div.style.color = COLORS.TEXT;
-    div.style.zIndex = '1000';
     div.innerHTML = `
-      <h4 style="margin: 0; font-size: 12pt; color: ${COLORS.TEXT};">Legend</h4>
+      <h4 style="margin: 0 0 10px 0; font-size: 14pt; color: ${COLORS.TEXT}; border-bottom: 1px solid ${COLORS.SECONDARY}; padding-bottom: 5px;">Legend</h4>
       <div style="display: flex; align-items: center; margin-top: 8px;">
         <span style="
           display: inline-block;
@@ -364,19 +362,19 @@ function addLegend(map) {
           border: 1px solid ${COLORS.SECONDARY};
           margin-right: 8px;
         "></span>
-        <span style="font-size: 10pt;">Cafes</span>
+        <span style="font-size: 11pt;">Cafes</span>
       </div>
-      <div style="display: flex; align-items: center; margin-top: 8px;">
+      <div style="display: flex; align-items: center; margin-top: 8px; margin-bottom: 5px;">
         <span style="
           display: inline-block;
-          width: 20px;
-          height: 20px;
+          width: 16px;
+          height: 16px;
           border-radius: 50%;
           background-color: ${COLORS.ACCENT};
           border: 1px solid ${COLORS.ACCENT};
           margin-right: 8px;
         "></span>
-        <span style="font-size: 10pt;">Favorite Cafes</span>
+        <span style="font-size: 11pt;">Favorite Cafes</span>
       </div>
     `;
     return div;

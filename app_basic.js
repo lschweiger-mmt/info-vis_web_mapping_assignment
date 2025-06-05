@@ -126,12 +126,22 @@ function createPopupContent(properties) {
                   <span class="popup-value">${properties.opening_hours}</span>
                 </div>`;
   }
-  
-  // Cuisine if available
+    // Cuisine if available
   if (properties.cuisine) {
+    // Format cuisine: replace semicolons with commas, underscores with spaces, and capitalize each word
+    const formattedCuisine = properties.cuisine
+      .split(';')
+      .map(item => {
+        // Replace underscores with spaces and capitalize each word
+        return item.split('_')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ');
+      })
+      .join(', ');
+    
     content += `<div class="popup-cuisine">
                   <span class="popup-label">Cuisine:</span> 
-                  <span class="popup-value">${properties.cuisine}</span>
+                  <span class="popup-value">${formattedCuisine}</span>
                 </div>`;
   }
   

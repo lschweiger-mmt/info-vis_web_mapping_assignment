@@ -191,13 +191,13 @@ body {
 /* Website button styling */
 .popup-website {
     margin-top: 14px;
-    text-align: center;
+    text-align: left;
 }
 
 .website-btn {
     display: inline-block;
     background-color: var(--color-accent);
-    color: #333333;
+    color: var(--color-main);
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;

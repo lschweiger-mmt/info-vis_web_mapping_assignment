@@ -647,8 +647,219 @@ function addCountrySelector(map) {
   countrySelector.addTo(map);
 }
 
+// Add the cuisine selector control
+function addCuisineSelector(map) {
+  const cuisineSelector = L.control({ position: 'bottomleft' });
+  
+  cuisineSelector.onAdd = function() {
+    const div = L.DomUtil.create('div', 'cuisine-selector');
+    div.innerHTML = `
+      <h4 style="margin: 0 0 10px 0; font-size: 14pt; color: ${COLORS.TEXT};">Cuisine Filter</h4>
+      <div class="cuisine-input-container">
+        <input type="text" id="cuisine-input" placeholder="Type to filter cuisines...">
+        <button id="clear-cuisine" title="Clear filter">×</button>
+      </div>
+      <div id="cuisine-suggestions" class="cuisine-suggestions"></div>
+    `;
+    
+    // Prevent click events from propagating to the map
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
+    
+    return div;
+  };
+  
+  cuisineSelector.addTo(map);
+  
+  // Initialize cuisine selector functionality after adding to map
+  initCuisineSelector();
+}
+
+// Initialize cuisine selector functionality
+function initCuisineSelector() {
+  const input = document.getElementById('cuisine-input');
+  const suggestionsContainer = document.getElementById('cuisine-suggestions');
+  const clearButton = document.getElementById('clear-cuisine');
+  
+  // Variable to store available cuisines from current data
+  let availableCuisines = [];
+  let currentFilter = null;
+  
+  // Function to extract cuisines from GeoJSON data
+  function extractCuisinesFromData() {
+    if (!currentGeoJsonLayer) return [];
+    
+    const cuisines = new Set();
+    
+    currentGeoJsonLayer.eachLayer(function(layer) {
+      if (layer.feature && layer.feature.properties && layer.feature.properties.cuisine) {
+        // Split by semicolon since OSM data uses semicolons to separate multiple cuisines
+        const cuisineList = layer.feature.properties.cuisine.split(';');
+        
+        cuisineList.forEach(cuisine => {
+          // Format cuisine: replace underscores with spaces and capitalize
+          const formattedCuisine = cuisine.trim()
+            .split('_')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+          
+          if (formattedCuisine) {
+            cuisines.add(formattedCuisine);
+          }
+        });
+      }
+    });
+    
+    return Array.from(cuisines).sort();
+  }
+  
+  // Function to show suggestions based on input
+  function showSuggestions(inputValue) {
+    // Clear previous suggestions
+    suggestionsContainer.innerHTML = '';
+    
+    if (!inputValue) {
+      suggestionsContainer.style.display = 'none';
+      return;
+    }
+    
+    // Filter cuisines that match the input (case insensitive)
+    const filteredCuisines = availableCuisines.filter(cuisine => 
+      cuisine.toLowerCase().includes(inputValue.toLowerCase())
+    );
+    
+    if (filteredCuisines.length === 0) {
+      suggestionsContainer.style.display = 'none';
+      return;
+    }
+    
+    // Create suggestion elements
+    filteredCuisines.forEach(cuisine => {
+      const suggestion = document.createElement('div');
+      suggestion.className = 'cuisine-suggestion';
+      suggestion.textContent = cuisine;
+      
+      // Add click event to select this cuisine
+      suggestion.addEventListener('click', function() {
+        input.value = cuisine;
+        suggestionsContainer.style.display = 'none';
+        currentFilter = cuisine;
+        filterMapByCuisine(cuisine);
+      });
+      
+      suggestionsContainer.appendChild(suggestion);
+    });
+    
+    suggestionsContainer.style.display = 'block';
+  }
+  
+  // Function to filter map points by cuisine
+  function filterMapByCuisine(cuisine) {
+    if (!currentGeoJsonLayer) return;
+    
+    currentGeoJsonLayer.eachLayer(function(layer) {
+      if (layer.feature && layer.feature.properties) {
+        const properties = layer.feature.properties;
+        
+        if (properties.cuisine) {
+          // Format cuisine from properties in the same way we did for the list
+          const formattedCuisines = properties.cuisine.split(';').map(c => 
+            c.trim().split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+          );
+          
+          // Check if the layer's cuisines include the filter cuisine
+          const match = formattedCuisines.some(c => c === cuisine);
+          
+          if (match) {
+            // Show the layer and restore its style
+            layer.setStyle({
+              opacity: 1,
+              fillOpacity: 1
+            });
+          } else {
+            // Hide the layer by making it nearly transparent
+            layer.setStyle({
+              opacity: 0.15,
+              fillOpacity: 0.15
+            });
+          }
+        } else {
+          // No cuisine property, hide it
+          layer.setStyle({
+            opacity: 0.15,
+            fillOpacity: 0.15
+          });
+        }
+      }
+    });
+  }
+  
+  // Function to clear the cuisine filter
+  function clearCuisineFilter() {
+    input.value = '';
+    currentFilter = null;
+    suggestionsContainer.style.display = 'none';
+    
+    // Reset all layers to visible
+    if (currentGeoJsonLayer) {
+      currentGeoJsonLayer.eachLayer(function(layer) {
+        layer.setStyle({
+          opacity: 1,
+          fillOpacity: 1
+        });
+      });
+    }
+  }
+  
+  // Event listener for input field
+  input.addEventListener('input', function() {
+    showSuggestions(this.value);
+  });
+  
+  // Event listener for clear button
+  clearButton.addEventListener('click', clearCuisineFilter);
+  
+  // Close suggestions when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!suggestionsContainer.contains(e.target) && e.target !== input) {
+      suggestionsContainer.style.display = 'none';
+    }
+  });
+  
+  // Update available cuisines when data changes
+  function updateAvailableCuisines() {
+    availableCuisines = extractCuisinesFromData();
+    
+    // If there's a current filter, reapply it to the new data
+    if (currentFilter) {
+      filterMapByCuisine(currentFilter);
+    }
+  }
+  
+  // Expose the update function to the global scope so it can be called from elsewhere
+  window.updateCuisineList = updateAvailableCuisines;
+}
+
 // Add the country selector
 addCountrySelector(map);
+
+// Add the legend
+addLegend(map);
+
+// Add the cuisine selector
+addCuisineSelector(map);
+
+// Modify loadCountryData to update cuisines after loading data
+const originalLoadCountryData = loadCountryData;
+loadCountryData = function(country) {
+  originalLoadCountryData(country);
+  // After a small delay to ensure data is loaded
+  setTimeout(() => {
+    if (window.updateCuisineList) {
+      window.updateCuisineList();
+    }
+  }, 500);
+};
 
 // Load available GeoJSON files and initialize the map
 loadAvailableGeoJsonFiles();
@@ -657,6 +868,3 @@ loadAvailableGeoJsonFiles();
 window.addEventListener('resize', function () {
   map.invalidateSize();
 });
-
-// Load available GeoJSON files and populate the country data
-loadAvailableGeoJsonFiles();

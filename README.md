@@ -1,5 +1,6 @@
 # Vegan friendly restaurants – Interactive Web Map with Leaflet
 
+[Demo](https://lschweiger-mmt.github.io/info-vis_web_mapping_assignment/)
 ![Screenshot](image.png)
 
 ## Introduction
